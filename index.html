@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<title>인영 아카이브</title><meta name="description" content="전시 기획자 인영의 개인 아카이브">
+<style>
+@font-face{font-family:"PartialSansKR";src:url(assets/fonts/PartialSansKR-Regular.woff2) format("woff2");font-display:swap}
+:root{--ink:#1E1E1E;--mute:#8b8f97;--line:#ececef;--soft:#f3f4f6;--lime:#CFFF68;--pink:#F8AEDF;--cobalt:#2745A0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:#fff;color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR",sans-serif}
+a{color:inherit}
+header.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.bar{max-width:1400px;margin:0 auto;padding:12px 28px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.bar a.brand{display:flex;color:var(--ink);text-decoration:none}
+.logo{height:26px;width:auto;display:block}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{text-decoration:none;padding:5px 12px;border-radius:99px;font-size:14px;color:var(--ink)}
+nav a:hover,nav a.on{background:var(--lime)}
+main{max-width:1400px;margin:0 auto;padding:0 28px}
+.intro{padding:48px 0 12px;color:var(--mute);font-size:16px}
+.intro b{color:var(--ink);font-weight:600}
+section{padding:36px 0 24px}
+h2{font-family:"PartialSansKR",inherit;font-weight:400;font-size:30px;margin:0 0 6px}
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:14px 0 22px}
+.tools input[type=search]{font:inherit;padding:8px 14px;border:1px solid var(--line);border-radius:99px;min-width:240px;outline:none}
+.tools input:focus{border-color:var(--cobalt)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:inherit;font-size:12px;border:0;background:var(--soft);padding:4px 11px;border-radius:99px;cursor:pointer;color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff}
+.tag{display:inline-block;font-size:11px;background:var(--soft);padding:2px 9px;border-radius:99px;margin:0 4px 4px 0;color:#555}
+.badge{display:inline-block;font-size:11px;font-weight:600;background:var(--lime);padding:1px 8px;border-radius:99px;color:var(--ink)}
+.card{background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.08),0 0 0 1px var(--line);overflow:hidden}
+.masonry{column-count:4;column-gap:18px}
+.masonry .card{break-inside:avoid;margin:0 0 18px;cursor:zoom-in;position:relative;display:block;width:100%;padding:0;border:0;text-align:left;font:inherit;color:inherit}
+.masonry img{display:block;width:100%;height:auto}
+.masonry .cap{padding:10px 12px 8px}
+.cap .t{font-weight:600;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+a.site{display:block;text-decoration:none;transition:transform .15s}
+a.site:hover{transform:translateY(-2px)}
+.thumb{aspect-ratio:16/10;background:var(--soft);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.thumb .ph{font-family:"PartialSansKR",inherit;font-size:22px;color:var(--cobalt)}
+.thumb.noimg{background:linear-gradient(135deg,var(--lime),var(--pink))}
+.body{padding:12px 14px 10px}
+.dom{color:var(--mute);font-size:12px}
+.note{color:#555;font-size:13px;margin:4px 0 8px}
+.pos{position:absolute;top:8px;left:8px}
+.empty{color:var(--mute);padding:40px 0;text-align:center;background:var(--soft);border-radius:10px}
+.none{color:var(--mute);padding:30px 0;display:none}
+footer{max-width:1400px;margin:60px auto 0;padding:24px 28px 40px;border-top:1px solid var(--line);color:var(--mute);font-size:12px}
+#lb{position:fixed;inset:0;background:rgba(255,255,255,.96);z-index:50;display:none;align-items:center;justify-content:center;padding:24px;flex-direction:column;gap:14px}
+#lb.open{display:flex}
+#lb img{max-width:100%;max-height:72vh;border-radius:10px;box-shadow:0 2px 14px rgba(0,0,0,.15)}
+#lb .info{max-width:720px;text-align:center}
+#lb button{position:absolute;top:16px;right:20px;font-size:28px;background:none;border:0;cursor:pointer;color:var(--ink)}
+.lock{max-width:380px;margin:12vh auto;text-align:center}
+.lock form{display:flex;gap:8px;margin:18px 0 10px;align-items:stretch}
+.lock .btn{white-space:nowrap;min-width:72px;flex:none;box-sizing:border-box}
+.lock input[type=password]{flex:1;min-width:0;box-sizing:border-box;font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:10px;outline:none}
+.lock input:focus{border-color:var(--cobalt)}
+.btn{font:inherit;border:0;background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;cursor:pointer}
+.btn.ghost{background:var(--soft);color:var(--ink);padding:6px 14px;font-size:13px}
+.err{color:#c0392b;min-height:22px;font-size:14px}
+.rem{font-size:13px;color:var(--mute)}
+.small{font-size:12px;color:var(--mute);margin-top:22px}
+.papers{display:grid;gap:14px;max-width:820px}
+.papers .card{padding:16px 18px}
+.papers h3{margin:0 0 2px;font-size:17px}
+.papers .by{color:var(--mute);font-size:13px;margin-bottom:6px}
+.papers a.open{display:inline-block;margin-top:6px;font-size:13px;color:var(--cobalt)}
+@media(max-width:1100px){.masonry{column-count:3}}
+@media(max-width:760px){.masonry{column-count:2;column-gap:12px}.masonry .card{margin-bottom:12px}}
+@media(max-width:600px){.bar,main,footer{padding-left:16px;padding-right:16px}.bar{gap:10px}.grid{grid-template-columns:1fr}.intro{padding-top:28px}h2{font-size:26px}}
+</style></head><body>
+<header class="top"><div class="bar"><a class="brand" href="index.html" aria-label="ARCHIVE"><svg class="logo" viewBox="0 -1516 12265 1803" role="img" aria-label="ARCHIVE"><path fill="currentColor" d="M1495 -1475 2007 246H1290L1233 0H774L717 246H0L512 -1475ZM889 -492H1118L1004 -981ZM2744 -1475V-784H2902Q3164 -784 3164 -885Q3164 -983 2902 -983H2785L2847 -1475H2996Q3234 -1475 3403.5 -1436.0Q3573 -1397 3675.0 -1319.5Q3777 -1242 3824.0 -1135.5Q3871 -1029 3871 -885Q3871 -707 3798.5 -582.5Q3726 -458 3568 -387L3953 246H3113L2888 -293H2744V246H2048V-1475ZM4996 287Q4689 287 4456.5 175.5Q4224 64 4098.0 -140.5Q3972 -345 3972.0 -614.0Q3972 -883 4098.0 -1087.5Q4224 -1292 4456.5 -1404.0Q4689 -1516 4996 -1516Q5395 -1516 5651.0 -1332.5Q5907 -1149 5977 -829L5298 -670Q5280 -768 5200.0 -834.5Q5120 -901 4996 -901Q4855 -901 4774.0 -816.0Q4693 -731 4691 -614Q4689 -498 4771.5 -413.0Q4854 -328 4996 -328Q5122 -328 5202.0 -395.5Q5282 -463 5300 -563L5977 -403Q5909 -82 5652.0 102.5Q5395 287 4996 287ZM6747 246H6081V-1475H6747V-911H7300V-1475H7965V246H7300V-358H6747ZM8743 -1475V246H8047V-1475ZM9316 246 8784 -1475H9521L9726 -430L9931 -1475H10668L10136 246ZM12255 -952H11375V-829H12235V-420H11375V-297H12265V246H10709V-1475H12255Z"/></svg></a><nav><a href="index.html#graphic">그래픽</a><a href="index.html#sites">사이트</a><a href="papers.html">개인 자료·논문</a></nav></div></header>
+<main><p class="intro"><b>전시 기획자 인영</b>이 모아두는 그래픽과 사이트 아카이브예요.</p>
+<section id="graphic"><h2>그래픽</h2>
+<div class="tools" id="graphic-tools"><input type="search" id="graphic-q" placeholder="제목·메모·태그 검색" aria-label="검색"><div class="chips" id="graphic-chips"></div></div>
+<div id="graphic-empty" class="empty" style="display:none">아직 담긴 그래픽이 없어요. Drive의 ‘자료 사이트 업로드/그래픽’ 폴더에 이미지를 넣어 주세요.</div>
+<div id="graphic-list" class="masonry"></div>
+<div id="graphic-none" class="none">검색 결과가 없어요.</div></section>
+<section id="sites"><h2>사이트</h2>
+<div class="tools" id="site-tools"><input type="search" id="site-q" placeholder="제목·메모·태그 검색" aria-label="검색"><div class="chips" id="site-chips"></div></div>
+<div id="site-empty" class="empty" style="display:none">아직 담긴 사이트가 없어요. Drive의 ‘사이트 목록’ 시트에 URL을 적어 주세요.</div>
+<div id="site-list" class="grid"></div>
+<div id="site-none" class="none">검색 결과가 없어요.</div></section>
+</main>
+<footer>마지막 업데이트 2026-10-28 (Asia/Seoul) · 인영 아카이브</footer>
+<div id="lb" role="dialog" aria-modal="true"><button aria-label="닫기" onclick="document.getElementById('lb').classList.remove('open')">×</button><img id="lb-img" alt=""><div class="info" id="lb-info"></div></div>
+<script type="application/json" id="data">{"items": [{"id": "sample-site", "section": "site", "title": "예시 — MoMA", "note": "예시 항목입니다 (삭제 가능)", "tags": ["미술관", "예시"], "sample": true, "url": "https://www.moma.org", "thumb": "assets/thumbs/2bfe18b78f117636.webp", "domain": "moma.org"}, {"id": "sample-graphic", "section": "graphic", "title": "예시 — 추상 그래픽", "note": "예시 항목입니다 (삭제 가능)", "tags": ["예시", "추상"], "sample": true, "image": "assets/img/a6ab3ee28d87df01.webp", "w": 1200, "h": 1500}]}</script>
+<script>
+const D=JSON.parse(document.getElementById('data').textContent);
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const tagsH=t=>(t||[]).map(x=>'<span class="tag">'+esc(x)+'</span>').join('');
+const badge=i=>i.sample?'<span class="badge">예시</span>':'';
+const sections={graphic:{items:D.items.filter(i=>i.section==='graphic'),q:'',tag:''},site:{items:D.items.filter(i=>i.section==='site'),q:'',tag:''}};
+function match(i,s){const q=s.q.toLowerCase();
+ if(s.tag&&!(i.tags||[]).includes(s.tag))return false;
+ return !q||[i.title,i.note,(i.tags||[]).join(' '),i.domain].join(' ').toLowerCase().includes(q);}
+function card(i){
+ if(i.section==='graphic')return '<button class="card" data-id="'+esc(i.id)+'"><img loading="lazy" src="'+esc(i.image)+'" width="'+(i.w||'')+'" height="'+(i.h||'')+'" alt="'+esc(i.title)+'"><div class="cap"><div class="t">'+esc(i.title)+' '+badge(i)+'</div>'+tagsH(i.tags)+'</div></button>';
+ const th=i.thumb?'<img loading="lazy" src="'+esc(i.thumb)+'" alt="">':'<span class="ph">'+esc(i.domain)+'</span>';
+ return '<a class="card site" href="'+esc(i.url)+'" target="_blank" rel="noopener"><div class="thumb'+(i.thumb?'':' noimg')+'">'+th+'</div><div class="body"><div class="t"><b>'+esc(i.title)+'</b> '+badge(i)+'</div><div class="dom">'+esc(i.domain)+'</div>'+(i.note?'<div class="note">'+esc(i.note)+'</div>':'')+tagsH(i.tags)+'</div></a>';
+}
+function render(key){
+ const s=sections[key],box=$('#'+key+'-list');
+ const list=s.items.filter(i=>match(i,s));
+ box.innerHTML=list.map(card).join('');
+ $('#'+key+'-none').style.display=list.length||!s.items.length?'none':'block';
+ document.querySelectorAll('#'+key+'-chips .chip').forEach(c=>c.classList.toggle('on',c.dataset.tag===s.tag));
+}
+for(const key of Object.keys(sections)){
+ const s=sections[key];
+ if(!s.items.length){$('#'+key+'-tools').style.display='none';$('#'+key+'-empty').style.display='block';continue;}
+ const tags=[...new Set(s.items.flatMap(i=>i.tags||[]))].sort();
+ $('#'+key+'-chips').innerHTML=tags.length?['']. concat(tags).map(t=>'<button class="chip" data-tag="'+esc(t)+'">'+(t?esc('#'+t):'전체')+'</button>').join(''):'';
+ $('#'+key+'-chips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;s.tag=b.dataset.tag;render(key);};
+ $('#'+key+'-q').oninput=e=>{s.q=e.target.value;render(key);};
+ render(key);
+}
+const lb=$('#lb');
+function closeLb(){lb.classList.remove('open');}
+$('#graphic-list').onclick=e=>{const c=e.target.closest('.card');if(!c)return;
+ const i=sections.graphic.items.find(x=>x.id===c.dataset.id);if(!i)return;
+ $('#lb-img').src=i.image;$('#lb-img').alt=i.title;
+ $('#lb-info').innerHTML='<h3 style="margin:0 0 4px">'+esc(i.title)+' '+badge(i)+'</h3>'+(i.note?'<p style="margin:0 0 8px;color:#555">'+esc(i.note)+'</p>':'')+tagsH(i.tags);
+ lb.classList.add('open');};
+lb.onclick=e=>{if(e.target.id!=='lb-img'&&!e.target.closest('.info'))closeLb();};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
+</script></body></html>
