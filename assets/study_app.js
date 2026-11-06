@@ -226,8 +226,8 @@ function fileListOf(p){
 function pdfBlock(p){
  const files=fileListOf(p);
  if(!files.length)return '';
- const note=files.some(f=>/^https:\/\/(drive|docs)\.google\.com\//i.test(f.url))?' · Drive 링크는 인영 계정으로만 열려요':'';
- return '<div class="files"><p class="by">관련 파일 <span class="fn">('+files.length+')'+note+'</span></p><ul class="pdfs">'+files.map(f=>'<li><a href="'+esc(f.url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.name)+'</a></li>').join('')+'</ul></div>';
+ const note=files.some(f=>/^https:\/\/(drive|docs)\.google\.com\//i.test(f.url))?' · Drive · 인영 계정으로만 열려요':'';
+ return '<div class="files"><p class="ft">관련 파일'+note+'</p><ul class="pdfs">'+files.map(f=>'<li><a href="'+esc(f.url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.name)+'</a></li>').join('')+'</ul></div>';
 }
 function reader(p){
  const body=(p.body_md||'').trim();
@@ -238,8 +238,9 @@ function reader(p){
  return '<div class="reader"><div class="racts"><button type="button" class="back" id="rback">← 목록</button>'+pinBtn+(getTok()?'<button type="button" data-act="edit" data-id="'+esc(p.id)+'">수정</button>':'')+'</div>'
   +'<div class="by">'+esc(catOf(p))+'<span class="kind">'+(KIND[p.kind]||'글')+'</span>'+(p.sample?' <span class="badge">예시</span>':'')+'</div>'
   +'<h1>'+esc(p.title)+'</h1><div class="by">'+esc([byLine(p),p.updated?'마지막 수정 '+p.updated:''].filter(Boolean).join(' · '))+'</div>'
-  +'<div>'+tagsH(p.tags)+'</div>'+lead+pdfBlock(p)
-  +(body?'<div class="md">'+md(body)+'</div>':'')+'</div>';
+  +'<div>'+tagsH(p.tags)+'</div>'+lead
+  +(body?'<div class="md">'+md(body)+'</div>':'')
+  +pdfBlock(p)+'</div>';
 }
 function editorHtml(p){
  const cats=[...new Set(CFG.categories.map(c=>c.name).concat(pf.posts.map(catOf)))];
