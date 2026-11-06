@@ -1,559 +1,564 @@
 {
-  "version": 1,
-  "updated": "2026-11-06",
-  "posts": [
+ "version": 1,
+ "updated": "2026-11-06",
+ "posts": [
+  {
+   "id": "sample-paper",
+   "kind": "paper",
+   "title": "예시 — 전시 공간과 관람객 동선 연구",
+   "category": "전시·박물관학",
+   "tags": [
+    "예시",
+    "전시"
+   ],
+   "summary": "전시 공간 구성이 관람객의 이동 경로에 미치는 영향을 다룬 예시 요약입니다.",
+   "body_md": "",
+   "author": "홍길동",
+   "year": 2024,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/drive/folders/1qRBl812x8VvEjvnFDu2EnvhVfuV8KeNe",
+   "drive_files": [],
+   "sample": true,
+   "editable": false,
+   "source": "manual",
+   "deleted": true,
+   "deleted_at": "2026-11-06"
+  },
+  {
+   "id": "notion-a3e82c7e2bef4e2291c54ce009ba130d",
+   "kind": "paper",
+   "title": "한국공예디자인문화진흥원_전시시설 유니버설디자인 가이드라인",
+   "category": "공간·디자인",
+   "tags": [
+    "유니버셜 디자인",
+    "디자인"
+   ],
+   "summary": "전시시설 유니버설디자인 가이드라인 · 한국공예디자인문화진흥원, 2022",
+   "body_md": "전시시설 유니버설디자인 가이드라인\n\n한국공예디자인문화진흥원, 2022 \n\n발행 2022년 2월\n발행인 김태훈 원장\n발행처 (재)한국공예·디자인문화진흥원\n주최 문화체육관광부\n주관 (재)한국공예·디자인문화진흥원 디자인본부 공공디자인사업팀\n수행 (주)인아웃에스씨\n책임연구원 : 이민주\n연구원 : 이정수 황혁수 박홍주 소현진 우현민 김하늘 이미선 최은아 강주미 한재원\n\n\n![](study/img/20261106-143647-75fyyw.webp)\n![](study/img/20261106-143651-umcyfy.webp)\n![](study/img/20261106-143655-dcvne8.webp)\n\n▼원본 파일 다운로드\nhttps://www.designdb.com/?menuno=790&bbsno=31283&siteno=15&act=view&ztag=rO0ABXQAOTxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTkxIiBza2luPSJwaG90b19iYnNfMjAxOSI%2BPC9jYWxsPg%3D%3D#gsc.tab=0",
+   "author": "한국공예·디자인문화진흥원",
+   "year": 2022,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view",
+   "drive_files": [
     {
-      "id": "sample-paper",
-      "kind": "paper",
-      "title": "예시 — 전시 공간과 관람객 동선 연구",
-      "category": "전시·박물관학",
-      "tags": [
-        "예시",
-        "전시"
-      ],
-      "summary": "전시 공간 구성이 관람객의 이동 경로에 미치는 영향을 다룬 예시 요약입니다.",
-      "body_md": "",
-      "author": "홍길동",
-      "year": 2024,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/drive/folders/1qRBl812x8VvEjvnFDu2EnvhVfuV8KeNe",
-      "drive_files": [],
-      "sample": true,
-      "editable": false,
-      "source": "manual",
-      "deleted": true,
-      "deleted_at": "2026-11-06"
-    },
-    {
-      "id": "notion-a3e82c7e2bef4e2291c54ce009ba130d",
-      "kind": "paper",
-      "title": "한국공예디자인문화진흥원_전시시설 유니버설디자인 가이드라인",
-      "category": "공간·디자인",
-      "tags": [
-        "유니버셜 디자인",
-        "디자인"
-      ],
-      "summary": "전시시설 유니버설디자인 가이드라인 · 한국공예디자인문화진흥원, 2022",
-      "body_md": "전시시설 유니버설디자인 가이드라인\n\n한국공예디자인문화진흥원, 2022 \n\n발행 2022년 2월\n발행인 김태훈 원장\n발행처 (재)한국공예·디자인문화진흥원\n주최 문화체육관광부\n주관 (재)한국공예·디자인문화진흥원 디자인본부 공공디자인사업팀\n수행 (주)인아웃에스씨\n책임연구원 : 이민주\n연구원 : 이정수 황혁수 박홍주 소현진 우현민 김하늘 이미선 최은아 강주미 한재원\n\n\n![](study/img/20261106-143647-75fyyw.webp)\n![](study/img/20261106-143651-umcyfy.webp)\n![](study/img/20261106-143655-dcvne8.webp)\n\n▼원본 파일 다운로드\nhttps://www.designdb.com/?menuno=790&bbsno=31283&siteno=15&act=view&ztag=rO0ABXQAOTxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTkxIiBza2luPSJwaG90b19iYnNfMjAxOSI%2BPC9jYWxsPg%3D%3D#gsc.tab=0",
-      "author": "한국공예·디자인문화진흥원",
-      "year": 2022,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view",
-      "drive_files": [
-        {
-          "name": "전시시설 유니버설디자인 가이드라인 - 한국공예디자인문화진흥원, 2022",
-          "url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-d168c517084d40d0b71d636387153214",
-      "kind": "paper",
-      "title": "모두를 위한 전시 정보 제작 가이드",
-      "category": "공간·디자인",
-      "tags": [
-        "유니버셜 디자인",
-        "디자인",
-        "기획"
-      ],
-      "summary": "'쉬운 정보'를 제공 · 전시 그래픽에 참고하면 좋을 것 같다",
-      "body_md": "![](study/img/20261106-141111-w8gaon.webp)\n\n![](study/img/20261106-141137-yhkvfh.webp)\n![](study/img/20261106-141139-nj62fj.webp)\n\n- '쉬운 정보'를 제공\n- 전시 그래픽에 참고하면 좋을 것 같다\n\n\n\n\n\n▼ 원본 파일 다운로드 링크 \nhttps://www.sosocomm.com/news/news_view?no=257&newsType=NOTICE",
-      "author": "소소한 소통",
-      "year": 2023,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1YWgFlCrBp7MEo5W9GGr0b6-G7-OxMNEw/view",
-      "drive_files": [],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-650a632f224c47a9b7b9566c5033cf59",
-      "kind": "paper",
-      "title": "수장고 자료 리스트",
-      "category": "전시·박물관학",
-      "tags": [
-        "공사/시설"
-      ],
-      "summary": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.",
-      "body_md": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.\n\n![](study/img/20261106-140904-wwo2fe.webp)\n\n",
-      "author": "주식회사 이환 등",
-      "year": "",
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1t-lwquH_WOEFMizmAnXSwQ4ShoUujEnB/view",
-      "drive_files": [
-        {
-          "name": "수장고조습패널제안서_(22.11).pdf",
-          "url": "https://drive.google.com/file/d/1t-lwquH_WOEFMizmAnXSwQ4ShoUujEnB/view"
-        },
-        {
-          "name": "(주)송현_카다로그2012(low).pdf",
-          "url": "https://drive.google.com/file/d/1my6bRYpAwz1U8LFHJgkdnPDWGAFAwcwQ/view"
-        },
-        {
-          "name": "수장고_시공문화_카탈로그.pdf",
-          "url": "https://drive.google.com/file/d/1yOFbz-tIr7-gLZe9Ln2dQLpXWoYqP7Rd/view"
-        },
-        {
-          "name": "수장고시설1007.pdf",
-          "url": "https://drive.google.com/file/d/1P5vRyFySti9UJfK6aCZSsonxRrDH30hV/view"
-        },
-        {
-          "name": "수장고영역(온습도)개요1020.pdf",
-          "url": "https://drive.google.com/file/d/1pj9EL7ifyhTVVJKpfR28XQPpPrfKdaYQ/view"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-dfce090f1a7b440aa6b75b76f8ba03ff",
-      "kind": "paper",
-      "title": "박물관 또는 미술관 등록요건",
-      "category": "문화정책·경영",
-      "tags": [
-        "행정",
-        "진흥법"
-      ],
-      "summary": "박물관·미술관으로 등록하기 위해 필요한 요건을 정리한 법제처 자료예요.",
-      "body_md": "",
-      "author": "법제처",
-      "year": 2019,
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "https://drive.google.com/file/d/106yaX0SUTROy0A0rUS6bhas-VUoyodOf/view",
-      "drive_files": [],
-      "sample": false,
-      "editable": false,
-      "source": "notion"
-    },
-    {
-      "id": "notion-3d8e42f5a2104ba490d672d418e86193",
-      "kind": "paper",
-      "title": "행안부 어린이놀이시설 안전기준 가이드",
-      "category": "공간·디자인",
-      "tags": [
-        "행정",
-        "어린이놀이시설",
-        "유니버셜 디자인"
-      ],
-      "summary": "해설서(2006) · 안전관리 매뉴얼 (2025)",
-      "body_md": "![](study/img/20261106-143455-npyz7p.webp)\n\n- 해설서(2006)\n\n![](study/img/20261106-143430-8yjsnb.webp)\n\n- 안전관리 매뉴얼 (2025)",
-      "author": "행정안전부",
-      "year": 2020,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view",
-      "drive_files": [
-        {
-          "name": "어린이놀이시설 안전기준 가이드 (06\")",
-          "url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view"
-        },
-        {
-          "name": "어린이놀이시설 안전관리 매뉴얼(25.3월 개정판)",
-          "url": "https://drive.google.com/file/d/1P7EBhtC5OhrRblI3Q1hFFJHVsTN2BecI/view?usp=sharing"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-593d2b95c0f443a2907f1f4847a8a5e5",
-      "kind": "paper",
-      "title": "무장애 실내놀이터 매뉴얼",
-      "category": "공간·디자인",
-      "tags": [
-        "어린이놀이시설",
-        "유니버셜 디자인"
-      ],
-      "summary": "목차 · Chapter 1 머리말",
-      "body_md": "\n![](study/img/20261106-142322-o8sqct.webp)\n\n목차\n\n\n\nChapter 1 머리말\n\n   1.1 매뉴얼의 목적\n\n   1.2 매뉴얼의 활용방법\n\n\n\nChapter 2 무장애 실내놀이터의 이해\n\n   2.1 무장애 실내놀이터의 개념\n\n   2.2 무장애 실내놀이터의 원칙\n\n   2.3 무장애 실내놀이터의 범위\n\n\n\nChapter 3 아동과 놀이활동\n\n   3.1 놀이의 특성\n\n   3.2 놀이 유형\n\n   3.3 장애 및 비장애아동의 신체 활동 범위\n\n\n\nChapter 4 무장애 실내놀이터 설계\n\n   4.1 관련법규\n\n   4.2 항목별 설계 기준\n\n\n\nChapter 5 무장애 실내놀이터 운영\n\n   5.1 무장애 실내놀이터 운영 가이드\n\n\n\n부록\n\n1. 실내놀이터 배리어프리 인증 기준 가이드\n\n2. 포커스그룹 인터뷰\n\n3. 실내놀이터 이용자 설문조사\n\n4. 실내놀이터 사례조사\n\n\n▼원본 파일 다운로드\nhttps://www.accessrights.or.kr/boards/466/view?referer=%2Fpages%2Fbooks",
-      "author": "(사)장애물없는생활환경시민연대",
-      "year": 2023,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view",
-      "drive_files": [
-        {
-          "name": "원문 PDF",
-          "url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-ca2c96b69bfb49609c6dc8b643321772",
-      "kind": "paper",
-      "title": "서울시 유니버설 디자인 적용지침(2022)",
-      "category": "공간·디자인",
-      "tags": [
-        "유니버셜 디자인"
-      ],
-      "summary": "서울시 유니버설 디자인 적용지침 · ▼원본 파일 다운로드",
-      "body_md": "![](study/img/20261106-142711-tm539u.webp)\n![](study/img/20261106-142925-g51j95.webp)\n![](study/img/20261106-142923-ya0dql.webp)\n\n- 서울시 유니버설 디자인 적용지침\n\n\n▼원본 파일 다운로드\nhttps://news.seoul.go.kr/culture/archives/522959",
-      "author": "서울특별시",
-      "year": 2017,
-      "added": "2026-10-28",
-      "updated": "2026-11-06",
-      "drive_url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view",
-      "drive_files": [
-        {
-          "name": "서울시 유니버설디자인 적용지침(2022)",
-          "url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "source": "notion"
-    },
-    {
-      "id": "notion-3ff07fb200dd4eab82868e34f5aedcc7",
-      "kind": "paper",
-      "title": "어린이 박물관 전시공간의 색채 및 조도 분포 특성과 관람행동에 관한 기초적 연구",
-      "category": "교육·관람객 연구",
-      "tags": [
-        "어린이놀이시설",
-        "디자인"
-      ],
-      "summary": "어린이 박물관 전시공간의 색과 밝기가 어떻게 분포하는지, 그리고 관람 행동과 어떤 관계가 있는지를 살펴본 기초 연구예요.",
-      "body_md": "",
-      "author": "최준혁 (동명대학교 실내건축학과 조교수)",
-      "year": 2015,
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "https://drive.google.com/file/d/1gBjto9Sznr_45CWcJTQTpSV1g9ekzH2S/view",
-      "drive_files": [],
-      "sample": false,
-      "editable": false,
-      "source": "notion"
-    },
-    {
-      "id": "notion-a7b2cf2f51ed4a2ebe89445687e259a4",
-      "kind": "paper",
-      "title": "글꼴 파일 저작권 바로 알기",
-      "category": "문화정책·경영",
-      "tags": [
-        "디자인",
-        "저작권",
-        "폰트"
-      ],
-      "summary": "글꼴(폰트) 파일을 쓸 때 알아야 할 저작권 내용을 쉽게 안내한 자료예요.",
-      "body_md": "",
-      "author": "저작권캠페인 반듯",
-      "year": 2019,
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "https://drive.google.com/file/d/1C1iwd0MwUhZ2wK3Q9MX58ePbt9bN8nK-/view",
-      "drive_files": [],
-      "sample": false,
-      "editable": false,
-      "source": "notion"
-    },
-    {
-      "id": "notion-50e4f7f75f5c4c8fb08b2f0148bc670d",
-      "kind": "note",
-      "title": "LED",
-      "category": "전시 기술·하드웨어",
-      "tags": [
-        "하드웨어",
-        "LED",
-        "실감/영상"
-      ],
-      "body_md": "## 픽셀 피치 \n\n### **LED전광판의 픽셀 피치란?**\n\n우리가 시청자 입장에서 LED전광판에서 표출되는 영상을 보면 그냥 연속된 이미지로만 보입니다. 하지만 그 연속된 이미지는 수많은 점들이 각각의 색상을 나타내어 만들어집니다**. 이 때, 그 점들을 픽셀(Pixel) 또는 도트(Dot)라고 부릅니다.**그리고 **그 픽셀 간의 거리를 픽셀 피치**라고 부릅니다. 그런데 많은 사람들이 픽셀 피치를 잘 못 이해하고 있습니다**. 픽셀 피치는 픽셀의 오른쪽 끝과 다음 픽셀의 왼쪽 끝이 아니라 픽셀 정중앙에서 다음 픽셀의 정중앙까지의 거리를 말합니다.**\n\n![](study/img/50e4f7f7-1-6a1f702c.webp)\n\n그런데 LED전광판의 가격을 알아보기 위해서 픽셀 피치에 대해 정확히 알아야 하는 이유는 **픽셀 피치에 따라 해상도가 달라지기 때문**입니다. 해상도라는 말은 많이 들어보셨을 겁니다. TV 광고를 보면 삼성이나 LG에서 '4K TV', '8K TV'를 판매하는 영상을 많이 보셨을 겁니다. 이때, 4K, 8K라는 의미는 해상도를 말하는 겁니다. **여기서 4K란 가로 3,840개의 픽셀의 수와 세로 2,160개의 픽셀 수로 이루어져 있는 스크린을 말합니다.**8K는 4K의 가로와 세로의 픽셀 수가 2배로 늘어난 것을 말합니다.**한마디로 해상도란 스크린 화면의 가로 픽셀의 총수량과 세로 픽셀의 총수량을 곱한 것을 말합니다.**\n\n![](study/img/50e4f7f7-2-b50ff52b.webp)\n\n_LED전광판 설치 사례입니다. 사진의 LED전광판은 픽셀 피치 1.56mm이며 해상도는 4K 입니다. 이 전광판의 가로 사이즈는 6,000mm 이며, 높이는 3,375mm 입니다._\n\n### LED전광판의 해상도는 어떻게 구할까요?\n\n해상도를 계산하는 방법은 아주 간단합니다. 그냥 LED전광판의 가로 크기를 픽셀 피치로 나누면 LED전광판의 가로 해상도가 나오고, 세로 크기를 픽셀 피치로 나누면 세로 해상도가 나옵니다. 정말 간단하죠? 그렇다면 LED전광판의 픽셀 피치가 좁으면 좁을수록 어떻게 될까요? 픽셀의 수량이 늘어나면서 해상도가 올라가게 됩니다. 그리고 해상도가 올라가면 선명도가 올라가고 화질이 좋아집니다.\n\n[https://idplan.tistory.com/entry/‘LED전광판-가격’-LED픽셀-피치에-따라-달라지는-이유는](https://idplan.tistory.com/entry/‘LED전광판-가격’-LED픽셀-피치에-따라-달라지는-이유는)\n\n### **최적의 시청 거리**\n\n전광판의 사용 환경에 따라 어떤 규격의 전광판을 사용할지 결정할 수 있게 될 텐데 픽셀피치 간 **최적의 시청 거리**를 알아두시면 좋습니다.\n\n| 픽셀피치 (Pixel Pitch) | 최소 시청 거리 |\n|---|---|\n| 5mm | 5M |\n| 4mm | 4M |\n| 3mm | 3M |\n| 2mm | 2M |\n| 1.2mm | 1.2M |\n\n쉽게 말해서 최적의 시청 거리는 **제품의 픽셀피치 밀리미터(mm)를 미터(M)로 환산**하면 됩니다. 따라서 픽셀피치 4mm의 엘이디 전광판은 4M 이상에서 볼 때 적합하다고 할 수 있습니다.\n\n[https://m.blog.naver.com/firstmecha/223273076815](https://m.blog.naver.com/firstmecha/223273076815)\n\n> **LED전광판 가격 픽셀 피치에 따라 달라지는 이유**\n\n위의 내용을 모두 이해하셨다면 LED전광판 가격이 픽셀 피치에 따라 달라지는 이유를 짐작하셧을겁니다. LED전광판 가격이 픽셀 피치에 따라 달라지는 이유는 뭘까요? 위에서 픽셀 피치가 좁을수록 픽셀의 수량이 늘어난다고 했습니다. 픽셀 수량이 늘어난다는 것은 LED칩의 수량이 늘어나는 겁니다. LED칩의 수량이 늘어나니깐 자연적으로 가격도 올라가게 됩니다.\n\n위의 내용을 모두 이해하셨는지 확인하기 위해 픽셀 피치 구하는 문제를 드리겠습니다. 한번 맞춰 보세요.\n\nTEST ) A라는 학교에서 학교 강당 한 쪽 벽면에 LED전광판을 설치하려고 합니다. 그 벽면의 크기는 가로 8미터이고 높이는 6미터입니다. 이 학교에서 원하는 해상도는 4K라고 가정한다면 이 벽면 크기에 맞게 4K 해상도의 LED전광판을 설치하려면 몇 미리 픽셀 피치를 사용해야 할까요? ( 4K 해상도는 가로 3,840px , 높이 2,160px이며, 가능한 픽셀 피치를 모두 선택해 주세요)\n\n1. 픽셀 피치 : 1.56mm\n2. 픽셀 피치 : 1.875mm\n3. 픽셀 피치 : 2mm\n4. 픽셀 피치 : 2.5mm\n5. 픽셀 피치 : 3mm\n\n정답은 1번, 2번, 3번 입니다. 4번과 5번은 정답이 될 수 없습니다. 문제 풀이를 해볼까요? 픽셀 피치를 구하기 위해서는 먼저 학교 강당의 벽면 크기를 mm로 변환해야 합니다. 벽면의 크기를 mm로 변환하면, 가로 8,000mm 높이 6,000mm가 나옵니다. 그리고 4K의 해상도는 가로 3,840px 세로 2,160px입니다. 그다음 벽면 가로 크기를 4K 가로 해상도로 나눠줍니다. 그러면 약 2.083이 나옵니다. 이 말뜻은 픽셀 피치가 2.083보다 낮아야 한다는 것입니다. 그렇기 때문에 보기 중에 2.083보다 낮은 숫자는 1번과 2번, 그리고 3번이 됩니다.\n\n## 플렉서블 LED \n\n**Impression TGF Series**\n\n## **필름처럼 가볍고 휘는 특성을 가진 투명 제품**\n\n별도의 구조물이 필요 없이 필름처럼 가볍고 휘는 특성을 가진 투명 LED 제품\n\nTGF 시리즈는 필름처럼 가볍고 휘는 특성을 가진 투명 LED입니다. 해상도가 뛰어나며, 별도의 구조물이 필요 없어 디자인의 품격을 유지하면서도 크기와 형태에 유연한 투명 디스플레이 구현이 가능합니다.”\n\n- Seamless(frameless) 고해상도 투명 대형 디스플레이 구현: 패널 길이 120cm ~ 150cm로, 높이 기준 240cm ~ 300cm까지 seamless로 설치, 길이는 무제한\n- 1mm 내외의 초 박형으로 유리창 등에 부착 설치(non-adhesive; 옵션)\n- 초 경량(2.0kg/㎡):전원 및 컨트롤러 제외\n- 50~70% 이상의 높은 시스템 투과율 (눈에 거슬리는 프로파일, 기둥 등이 없음)\n- 160도 이상의 시야 각 제공\n- 고해상도 지원 : 65,536 pixels/㎡ (160,000 pixels/㎡ 추가출시)\n\n![](study/img/50e4f7f7-3-737e7460.webp)\n\n[https://displayhub.co.kr/portfolio/impression-tgf-series투명-필름-스크린/](https://displayhub.co.kr/portfolio/impression-tgf-series투명-필름-스크린/)",
-      "summary": "## 픽셀 피치 ",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-29",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-365232d573214679afceb9b179d1a7ed",
-      "kind": "note",
-      "title": "인쇄/제본 용어",
-      "category": "시공·자재",
-      "tags": [
-        "인쇄/제본/출력",
-        "도련(돈보)"
-      ],
-      "body_md": "### **돈보선/ 도련**\n\n처음에 편집디자인에 대해 잘 모를 때 이야기입니다. 인쇄소에 파일을 보냈을 때 인쇄소에서 다시 연락이 옵니다. 돈보선(도련)이 하나도 안 빠져 있다는 연락을 받은적이 있어요.\n\n재단선: 검은색 선표시에선 재단선이라고 합니다. 실제로 종이가 잘려서 나오는 영역입니다.\n\n![](study/img/365232d5-1-c2d61a8e.webp)\n\n실제로 많은 종이를 놓고 같이 잘라보았을 때 나는 정확하게 일자로 잘랐다고 생각하고 실제로 종이를 보면 밀려서 잘린 경우가 있어요. 인쇄에서도 모든 인쇄가 끝나면 재단을 합니다. 인쇄소에선 재단할 때 저처럼 손으로 재단하는 게 아니라 기계가 재단을 합니다. 많은 양의 종이를 한 번에 재단할 경우 종이 밀림 현상이 있게 됩니다. 바탕에 색상 혹은 이미지가 가득 있을 경우에는 밀려서 잘릴 경우에 난 가득 이미지를 채우고 싶은데 밀렸을 경우 흰색이 보일 수도 있습니다. 어떤 건 흰색이 보이고 어떤 건 내가 원하던 색상이 다 채워져서 나오면 이건 인쇄사고입니다.\n\n![](study/img/365232d5-2-636bbab5.webp)\n\n![](study/img/365232d5-3-bb94b952.webp)\n\n![](study/img/365232d5-4-1808d5ed.webp)\n\n![](study/img/365232d5-5-dce9cff3.webp)\n\n종이가 밀렸을 경우에도 내가 원하는 색상과 이미지가 잘려 보이지 않게 하기 위해서 여분을 더 주는 것입니다. 그 여분을 도련이라고 말합니다. 반드시 인쇄물일 경우에는 도련 설정을 해줘야 합니다.\n\n책자, 리플렛, 포스터, 등 도련을 사방 3mm씩 줘야 합니다.\n\n포스터, 배너, 스티커, 명함은 도련 1mm~1.5mm 정도 줍니다.\n\n하지만 인쇄소마다 도련값 설정이 다른 곳도 있으니 인쇄소에 잘 확인하고 진행하시면 됩니다.\n\n제가 다니고 있는 회사에서 거래하는 인쇄소는 전단지, 포스터, 리플렛, 브로슈어, 책자를 진행할 경우에는 무조건 3mm씩 주고 진행하고 있고요.\n\n가끔 인쇄소가 아닌 디지털 인쇄를 맡기는 경우에는 1~2mm 정도 도련을 주는 곳도 있습니다.\n\n그러니 업체마다 다르니 확인하고 진행해주시면 됩니다.\n\n![](study/img/365232d5-6-08f4d0f8.webp)\n\n[https://gardengreem.tistory.com/42](https://gardengreem.tistory.com/42)\n\n### **A3 파일을 A4로 축소 제본할 경우**\n\n1) 보통은 A3 파일을 인쇄소에서 축소해서 제본 가능\n\n2) 그러나 축소할 경우 파일이 깨지는 경우 발생 그럴 경우 A4로 작업 요청할 수 있음\n\n3) A3 파일을 인디자인에서 변경시 시간이 너무 오래 걸리기 때문에 A3 파일을 JPG로 변환해서 축소해서 인디자인에 얹는 방식으로 작업 요청하면 됨",
-      "summary": "### **돈보선/ 도련**",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-29",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-7418a4fffe634528ac0112794d232860",
-      "kind": "note",
-      "title": "AR/VR/MR/XR 용어 정리",
-      "category": "전시 기술·하드웨어",
-      "tags": [
-        "연출기법",
-        "실감/영상",
-        "체험기법"
-      ],
-      "body_md": "![](study/img/7418a4ff-1-7df8df2f.webp)\n\n![](study/img/7418a4ff-2-96100930.webp)\n\n![](study/img/7418a4ff-3-ca758fd9.webp)\n\n![](study/img/7418a4ff-4-7a940544.webp)",
-      "summary": "![](notes/img/7418a4ff-1-7df8df2f.webp)",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-29",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-61cdb02034014a979080048b37ec0058",
-      "kind": "note",
-      "title": "쉐이더 리스트",
-      "category": "전시 기술·하드웨어",
-      "tags": [
-        "연출기법",
-        "실감/영상"
-      ],
-      "body_md": "3d 그래픽을 이용해 카툰 효과를 주는 것\n\n기타 쉐이더\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfODEg/MDAxNjY4ODg2ODEzNTA2.tyhljQXY-P6E7BhrNcIvjTSjTTG-V7T6l6j_TFRAPQcg._shHU8k3Mxy0PhF9PuIQK_MhnkGuu68NtXiFQG6lX6Mg.GIF.dollylene/Final.gif?type=w773)\n\n[https://www.blacksaltgames.com/2021/05/26/tutorial-creating-birds-particles-using-unity-and-shader-graph/](https://www.blacksaltgames.com/2021/05/26/tutorial-creating-birds-particles-using-unity-and-shader-graph/)\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjQ3/MDAxNjY4ODg2ODUxMjUw.jb_OSVFhactiFHmx1rCD8_Wp5LWU9sIfRoUEEcH9b6Ig.7rpP25hAQKxsxSHkUmh4pgtyQGmyTdVWmVG2B3RL1Lgg.PNG.dollylene/E1aD6wZVUAEWAMl-300x300.png?type=w773)\n\n만들어둔 모델링을 가지고 애니메이션을 주는 튜토리얼이 있었다\n\n이런 것도 되는구나 싶어서 놀랐다\n\n[https://www.youtube.com/watch?v=ynHFnTkd8-Y](https://www.youtube.com/watch?v=ynHFnTkd8-Y)\n\n[https://www.artstation.com/artwork/4b41NY](https://www.artstation.com/artwork/4b41NY)\n\n물 쉐이더를 만들어야 해서 이것저것 찾아보다가 발견한 것\n\n영상 보면서 물도 물인데\n\n돌이랑 야자수가 참 귀여워서 내가 만든 걸 한 번 슥 보고 한숨이 푹 나온 영상이다 ㅠ\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjky/MDAxNjY4ODg3MDU5MzQ3.lC5QV6WRVz32ul2Js1V41qnkmuJe0BVJniSkf-174Gcg.UrC2TiIzDP8_lhnHcdtFOBB_lt9aXorhDPxsL6nw4NAg.PNG.dollylene/toon-shader-demo.png?type=w773)\n\n[https://roystan.net/articles/toon-shader/](https://roystan.net/articles/toon-shader/)\n\n툰 쉐이더\n\n너무 빤딱빤딱한 느낌이 들긴 하는데, 이런 카툰렌더링은 어떻게 하는 건지 궁금하긴 하다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjgg/MDAxNjY4ODg3MTM1MTAw.B4ZiGkgSI_jzaOj5Je5zFZ0JRbHCt3EjX-phoNge_UIg.AjHK0i3taNUZKMRciOTMRbjwTfEmpp83XeemEyhRK1Ug.PNG.dollylene/unity-flat-low-poly-shader-01.png?type=w773)\n\n[https://hextantstudios.com/unity-flat-low-poly-shader/](https://hextantstudios.com/unity-flat-low-poly-shader/)\n\n플랫 쉐이더?\n\n이런 스타일도 귀여워서 좋아한다. 눈도 편안하고...\n\n오리 게임(Untiled Goose Game)도 이렇게 렌더링 한 건가? 같은 방식처럼 보이는데 맞는진 모르겠따\n\n[https://www.youtube.com/watch?v=d\\_w0Uv9hk7o](https://www.youtube.com/watch?v=d_w0Uv9hk7o)\n\n로우폴 그래픽에도 흥미가 있어서 따로 링크를 저장해뒀던 영상\n\n에셋 스토어에서 판매하는 팩이었는데 지원중단 예정이라고 ㄱ-... 구경하고 싶어도 그림의 떡이 됨\n\n[https://www.youtube.com/watch?v=wt2yYnBRD3U](https://www.youtube.com/watch?v=wt2yYnBRD3U)\n\n참 좋아하는 게임중 하나인 Journey\n\n저니의 배경이 배경인지라 게임 플레이 내내 모래를 봐야 하는데\n\n모래 그래픽이 참 아름답다. 그 모래를 어떻게 만들었는지 설명하는 영상\n\n모래의 Specular라고 해야 하나? 반짝반짝 빛나는 표현이 정말 좋았던 기억이 난다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjgz/MDAxNjY4ODg3NTg2NTYx.zUwSTYuQdBe4sp3Q1qm5cqGeG11Aki7kZmAvCK1a1pUg.ZDEp9KUfWsp7csnG0Ss6brD5keV_3dFFVhyMPI7WHmQg.PNG.dollylene/20221120045300.png?type=w773)\n\n[https://cyangamedev.wordpress.com/2020/10/06/watercolour-shader-experiments/](https://cyangamedev.wordpress.com/2020/10/06/watercolour-shader-experiments/)\n\n수채화 쉐이더\n\n가끔 보면 이런 스타일의 작업물이 보이는데 볼 때 마다 어떻게 만든건지 신기해서 꽤 오래 들여다본 기억이 있다\n\n동화를 테마로 한 게임이나, 그림/화가 등을 주제로 한 게임에 적용하면 참 예쁠 것 같다\n\n그렇지 않은 게임에서도 어느 한 컷씬이나 구간에 부분적으로 적용하면 인상깊은 연출이 가능할 거 같기도 하고\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjAg/MDAxNjY4ODg3NzkzMzQ1.Ud1TiXZzMM52hk6c_d7DwDeyROchPuxpl5CodI3EfB0g.tOxO--3JM5U2zywixz379qsiuTiWxjnqaCSBqkipIFQg.GIF.dollylene/5db80957cf8a4.gif?type=w773)\n\n[https://80.lv/articles/crumble-platform-game-mechanics-shaders-in-unity/](https://80.lv/articles/crumble-platform-game-mechanics-shaders-in-unity/)\n\n풀 쉐이더\n\n지금 만드는 건 이렇게 잔디가 무성한 공간이 아니긴 하지만...\n\n캐릭터의 움직임에 따라 풀이 움직인다든가, 땅에 발자국이 찍힌다든가, 눈이 파인다든가 하는 거에 흥미가 있어서 킵해뒀던 링크\n\n[https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)\n\n[**Setting Up Interactive Grass Shaders in Unity**](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)[ Check out a cool shader by StudioRoss and watch a tutorial by MinionsArt. 80.lv](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)\n\n![](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fcdn.80.lv%2Fapi%2Fupload%2Fmeta%2F18423%2Fimages%2F61ee7fef72373%2Fcontain_1200x630.jpg%22&type=ff500_300)\n\n위와 같은 이유로 킵해둔 링크\n\n이렇게 플레이에 생동감을 불어넣어주는 기술이 참 좋다\n\n게임에 몰입감을 더해준다고 해야하나... 제대로 움직이고 있다는 느낌도 들고\n\n[https://guoqin.artstation.com/projects/Jlk4ED](https://guoqin.artstation.com/projects/Jlk4ED)\n\n[**windy grass unity shader graph**](https://guoqin.artstation.com/projects/Jlk4ED)[ This is my third shader .I have made a windy grass shader with unity shader graph! I will make more various shaders and share them on Artstaion! guoqin.artstation.com](https://guoqin.artstation.com/projects/Jlk4ED)\n\n![](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fcdna.artstation.com%2Fp%2Fassets%2Fvideos%2Fimages%2F018%2F316%2F456%2Flarge%2Fqin-guo-maxresdefault.jpg%3F1558940893%22&type=ff500_300)\n\n바람에 흔들리는 풀\n\n한 번 보고 따라해봐야지 했던 튜토리얼인데\n\n아직도 안 따라해봤음.. 헉...\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfOTYg/MDAxNjY4ODg4MjQwODkz.N-4FqEwaU9h1JftKlWyVdxVBGhPUHDBiR0DwGxIiV40g.g8zuUULlnG7XW-2v97ve-pR8kLQenJD4MW6nHcBmu68g.PNG.dollylene/20221120050143.png?type=w773)\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfNDkg/MDAxNjY4ODg4MjQwOTA4.wDEZbGQTPxGz5SCCrKjOsMtbbuMzwsLGqQ_yVj9CnR4g._kdGFWZar8dSzP3pZICuBZroeszROeloZM_-Wj-v5vkg.JPEG.dollylene/mumin-can-gulerer-liquids.jpg?type=w773)\n\n[https://www.artstation.com/artwork/3dk0KY](https://www.artstation.com/artwork/3dk0KY)\n\n예쁘다거나 취향이라거나 그런 건 아니지만\n\nvfx에도 꽤 관심이 있어서 종종 들여다보는데\n\n마침 곧 만들 물이랑 관련있는 거라 관심이 갔다\n\n배에 널려있는 해산물이 있는데, 거기에서 물방울이 뚝뚝 떨어져도 좋겠다~ 싶어서...\n\n[https://www.youtube.com/watch?v=tKtkvlXooJc](https://www.youtube.com/watch?v=tKtkvlXooJc)\n\n레퍼런스를 가지고 이펙트를 만드는 튜토리얼 영상\n\n마침 영상에서 참고한 레퍼런스가 내가 참 좋아하던 게임 작업물이라...\n\n대략 이렇게 만들었겠구나~ 싶은 걸 알 수 있을 거 같아 저장해놨던 영상이다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMTMg/MDAxNjY4ODg4Mzc3Mzcz.9WCpWpYIakC4aZ3i6OQUXT339Eyihsthm0AhgbWGsXQg.KCsLa3kf9Uvu_71cL5yun4hQWThRv2W5GRKBa6KYGOcg.PNG.dollylene/20221120050601.png?type=w773)\n\n바로 이것 (아이고 정말 예쁘다)\n\n팀이 해체되어 서버만 열려있는 채 개발이 중단된 게임이라....\n\n새로운 작업물은 더 나오지 않을 거란 게 너무 아쉽다...\n\n이 개발팀이 만드는 모든 아트웍을 좋아했는데 정말 너무너무 아쉽다...\n\n[https://blog.naver.com/dollylene/222933195806](https://blog.naver.com/dollylene/222933195806)",
-      "summary": "3d 그래픽을 이용해 카툰 효과를 주는 것",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-111bcc57609c80829a0efc429e655d50",
-      "kind": "note",
-      "title": "바리솔",
-      "category": "시공·자재",
-      "tags": [
-        "시공",
-        "설계"
-      ],
-      "body_md": "[https://mimostudio.tistory.com/228](https://mimostudio.tistory.com/228)",
-      "summary": "[https://mimostudio.tistory.com/228](https://mimostudio.tistory.com/228)",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-c9e77284f75f4cdea5f628a11cac0915",
-      "kind": "note",
-      "title": "디멘션",
-      "category": "시공·자재",
-      "tags": [
-        "디멘션/치수"
-      ],
-      "body_md": "[https://www.dimensions.com/element/6-year-old-children-kids](https://www.dimensions.com/element/6-year-old-children-kids)",
-      "summary": "[https://www.dimensions.com/element/6-year-old-children-kids](https://www.dimensions.com/element/6-year-old-children-kid",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-56d58677c58e4e7c89e9416d2d61841b",
-      "kind": "note",
-      "title": "전시관 예산 잡기",
-      "category": "예산·공무",
-      "tags": [
-        "예산/공무"
-      ],
-      "body_md": "## 평당 300\n\n- 최소 금액이라고 생각하면 되는 기준.\n- 예쁜 그래픽 패널과 미디어 테이블 정도 구축 가능\n\n## 평당 700-800\n\n- 적정 금액. 여유롭게 매체를 넣을 수 있는 수준\n- (단, 유물 전시는 쇼케이스가 있어서 쇼케이스 가격에 따라 비용 차이가 있다)\n\n## 철거와 기존 시설 활용 여부\n\n- 완전 철거는 비용 차이가 조금 있다고 보면 된다.\n- 사업비의 5%는 철거비로 잡으면 됨 (인건비+폐기물 처리비용)",
-      "summary": "## 평당 300",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-28",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-1b8da3dcc10f48b897e4ae3482f468df",
-      "kind": "note",
-      "title": "다이크로익 필름",
-      "category": "시공·자재",
-      "tags": [
-        "시공",
-        "설계",
-        "필름"
-      ],
-      "body_md": "![](study/img/1b8da3dc-1-e1e8382a.webp)\n\n![](study/img/1b8da3dc-2-ae89f9af.webp)",
-      "summary": "![](notes/img/1b8da3dc-1-e1e8382a.webp)",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-29",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "notion-9589a44037104d00a99ed04a3b39c0dc",
-      "kind": "note",
-      "title": "프로젝터",
-      "category": "전시 기술·하드웨어",
-      "tags": [
-        "하드웨어",
-        "실감/영상",
-        "연출기법",
-        "프로젝터해상도"
-      ],
-      "body_md": "> **빔프로젝터 해상도**\n\n첫째 **SVGA** : 800 x 600 개의 픽셀로 이루어져있고 가로가 800 세로가 600 개로 이루어져 화면 비율은 4:3이 되겠습니다.\n\n둘째 **XGA** : 1024 x 768 개의 픽셀로 이루어져 있고 마찬가지로 화면 비율은 4:3입니다.\n\n셋째 **WXGA** : 1280 x 800 개의 픽셀로 이루어져 있고 화면 비율은 8:5 비율입니다.\n\n넷째 **FULL HD**: 1920 x 1080 개의 픽셀로 이루어져 있고 화면 비율은 16:9 비율입니다.\n\n✅ **나쁜예시) 4K 프로젝터에 FULL HD 영상을 연출할 경우**\n\n![](study/img/9589a440-1-1c727570.webp)\n\n_(픽셀은 화면을 이루고 있는 점을 이야기 하는 것으로 도트라고도 합니다)_\n\n[https://m.blog.naver.com/beamsurvival/220313065914](https://m.blog.naver.com/beamsurvival/220313065914)",
-      "summary": "> **빔프로젝터 해상도**",
-      "author": "",
-      "year": "2026",
-      "added": "2026-10-28",
-      "updated": "2026-10-29",
-      "drive_url": "",
-      "source": "notes-migrate",
-      "editable": true
-    },
-    {
-      "id": "post-camera-moving-terms-20261027",
-      "kind": "post",
-      "title": "영상·모션 용어 모음 (카메라 무빙 + 글자 효과)",
-      "category": "영상·콘텐츠 제작",
-      "tags": [
-        "카메라무빙",
-        "영상용어",
-        "글자효과",
-        "모션그래픽"
-      ],
-      "summary": "카메라 무빙 용어와 글자 효과(모션 타이포) 용어를 한곳에 모아 둔 글. 예시는 각 Threads 원문에서 확인해요.",
-      "body_md": "영상·모션 작업을 맡길 때 말로만 설명하기보다, 정확한 용어로 말하고 싶을 때 참고하려고 모아 두었어요.\n\n## 카메라 무빙\n\n「화면이 옆으로 쓱 지나가게」 대신 쓰는 카메라 움직임 용어예요. 예를 들어 **팬**은 카메라 위치는 두고 옆으로 훑기, **달리**는 카메라 자체가 앞뒤로 이동, **줌**은 렌즈로 확대·축소예요. 자주 쓰는 움직임 약 20가지를 움직이는 예시와 함께 볼 수 있어요.\n\n원문: Threads [@giting.kr](https://www.threads.com/@giting.kr) (2026-10-27)\n\n## 글자 효과 (모션 타이포그래피)\n\n「글자 멋있게」 대신 쓰는 글자 효과 이름이에요. 확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이고, 이런 식으로 자주 쓰는 용어 8가지를 정리해 두었어요. 움직이는 예시는 원문에서 확인해요.\n\n원문: Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)\n",
-      "author": "@giting.kr · @bokmanhi (Threads)",
-      "year": "2026",
-      "added": "2026-11-06",
-      "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@giting.kr/post/DfBhloCFGnK",
-      "drive_files": [
-        {
-          "name": "Threads · 카메라 무빙 (@giting.kr, 2026-10-27)",
-          "url": "https://www.threads.com/@giting.kr/post/DfBhloCFGnK"
-        },
-        {
-          "name": "Threads · 글자 효과 (@bokmanhi, 2026-10-24)",
-          "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "pinned": false,
-      "deleted": false,
-      "source": "manual"
-    },
-    {
-      "id": "post-motion-type-terms-20261024",
-      "kind": "post",
-      "title": "글자 효과(모션 타이포그래피) 용어 8가지",
-      "category": "영상·콘텐츠 제작",
-      "tags": [
-        "글자효과",
-        "모션그래픽"
-      ],
-      "summary": "「글자 멋있게」 대신 정확한 효과 이름으로 요청하려고 모아 둔 글자 효과 용어 글이에요.",
-      "body_md": "모션 그래픽·영상에서 글자 연출을 맡길 때 「글자 멋있게」라고만 말하기보다, 효과 이름을 정확히 말하고 싶을 때 참고하는 글이에요.\n\n확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이에요. 글에서는 이런 식으로 자주 쓰는 글자 효과 용어 8가지를 정리해 두었고, 움직이는 예시는 원문에서 볼 수 있어요.\n\n원문은 Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@bokmanhi/post/De5NQAGCHd2)\n",
-      "author": "@bokmanhi (Threads)",
-      "year": "2026",
-      "added": "2026-11-06",
-      "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2",
-      "drive_files": [
-        {
-          "name": "Threads 원문 (@bokmanhi, 2026-10-24)",
-          "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "pinned": false,
-      "deleted": true,
-      "source": "manual",
-      "deleted_at": "2026-11-06"
-    },
-    {
-      "id": "post-halftone-interactive-poster-20261027",
-      "kind": "post",
-      "title": "GPT로 만든 하프톤 인터랙티브 포스터",
-      "category": "영상·콘텐츠 제작",
-      "tags": [
-        "인터랙티브",
-        "하프톤",
-        "AI그래픽"
-      ],
-      "summary": "GPT(Astra)로 만든 하프톤(망점) 스타일 인터랙티브 포스터 예시. 그래픽·연출 아이디어 참고용.",
-      "body_md": "GPT(Astra)로 만든 **하프톤(망점)** 스타일 인터랙티브 포스터 예시예요. 그래픽·인터랙티브 연출 아이디어를 찾을 때 참고용으로 남겨 두었어요.\n\n자세한 움직임·이미지는 원문에서 확인해요.\n\n원문은 Threads [@nono_ai_archive](https://www.threads.com/@nono_ai_archive) (2026-10-27)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq)\n",
-      "author": "@nono_ai_archive (Threads)",
-      "year": "2026",
-      "added": "2026-11-06",
-      "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq",
-      "drive_files": [
-        {
-          "name": "Threads 원문 (@nono_ai_archive, 2026-10-27)",
-          "url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "pinned": false,
-      "deleted": false,
-      "source": "manual"
-    },
-    {
-      "id": "post-animation-easing-gitingc",
-      "kind": "post",
-      "title": "애니메이션이 싸 보이는 이유: 속도 변화(이징)",
-      "category": "영상·콘텐츠 제작",
-      "tags": [
-        "애니메이션",
-        "이징",
-        "모션"
-      ],
-      "summary": "처음부터 끝까지 같은 속도로 움직이면 로봇처럼 싸 보일 수 있어요. 속도 변화(이징)는 원문 영상에서 확인해요.",
-      "body_md": "AI가 만든 애니메이션이 **처음부터 끝까지 같은 속도**로만 움직이면, 로봇처럼 어색하고 싸 보일 수 있다는 이야기예요.\n\n움직임에 **속도 변화(이징)** 를 주면 훨씬 자연스러워져요. 구체적인 연출은 원문 영상 예시에서 확인하는 게 좋아요.\n\n원문은 Threads [@giting.kr](https://www.threads.com/@giting.kr)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@giting.kr/post/DfW-0nQBI9S)\n",
-      "author": "@giting.kr (Threads)",
-      "year": "",
-      "added": "2026-11-06",
-      "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@giting.kr/post/DfW-0nQBI9S",
-      "drive_files": [
-        {
-          "name": "Threads 원문 (@giting.kr)",
-          "url": "https://www.threads.com/@giting.kr/post/DfW-0nQBI9S"
-        }
-      ],
-      "sample": false,
-      "editable": true,
-      "pinned": false,
-      "deleted": false,
-      "source": "manual"
+     "name": "전시시설 유니버설디자인 가이드라인 - 한국공예디자인문화진흥원, 2022",
+     "url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view"
     }
-  ]
+   ],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-d168c517084d40d0b71d636387153214",
+   "kind": "paper",
+   "title": "모두를 위한 전시 정보 제작 가이드",
+   "category": "공간·디자인",
+   "tags": [
+    "유니버셜 디자인",
+    "디자인",
+    "기획"
+   ],
+   "summary": "'쉬운 정보'를 제공 · 전시 그래픽에 참고하면 좋을 것 같다",
+   "body_md": "![](study/img/20261106-141111-w8gaon.webp)\n\n![](study/img/20261106-141137-yhkvfh.webp)\n![](study/img/20261106-141139-nj62fj.webp)\n\n- '쉬운 정보'를 제공\n- 전시 그래픽에 참고하면 좋을 것 같다\n\n\n\n\n\n▼ 원본 파일 다운로드 링크 \nhttps://www.sosocomm.com/news/news_view?no=257&newsType=NOTICE",
+   "author": "소소한 소통",
+   "year": 2023,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1YWgFlCrBp7MEo5W9GGr0b6-G7-OxMNEw/view",
+   "drive_files": [],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-650a632f224c47a9b7b9566c5033cf59",
+   "kind": "paper",
+   "title": "수장고 자료 리스트",
+   "category": "전시·박물관학",
+   "tags": [
+    "공사/시설"
+   ],
+   "summary": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.",
+   "body_md": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.\n\n![](study/img/20261106-140904-wwo2fe.webp)\n\n",
+   "author": "주식회사 이환 등",
+   "year": "",
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1t-lwquH_WOEFMizmAnXSwQ4ShoUujEnB/view",
+   "drive_files": [
+    {
+     "name": "수장고조습패널제안서_(22.11).pdf",
+     "url": "https://drive.google.com/file/d/1t-lwquH_WOEFMizmAnXSwQ4ShoUujEnB/view"
+    },
+    {
+     "name": "(주)송현_카다로그2012(low).pdf",
+     "url": "https://drive.google.com/file/d/1my6bRYpAwz1U8LFHJgkdnPDWGAFAwcwQ/view"
+    },
+    {
+     "name": "수장고_시공문화_카탈로그.pdf",
+     "url": "https://drive.google.com/file/d/1yOFbz-tIr7-gLZe9Ln2dQLpXWoYqP7Rd/view"
+    },
+    {
+     "name": "수장고시설1007.pdf",
+     "url": "https://drive.google.com/file/d/1P5vRyFySti9UJfK6aCZSsonxRrDH30hV/view"
+    },
+    {
+     "name": "수장고영역(온습도)개요1020.pdf",
+     "url": "https://drive.google.com/file/d/1pj9EL7ifyhTVVJKpfR28XQPpPrfKdaYQ/view"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-dfce090f1a7b440aa6b75b76f8ba03ff",
+   "kind": "paper",
+   "title": "박물관 또는 미술관 등록요건",
+   "category": "문화정책·경영",
+   "tags": [
+    "행정",
+    "진흥법"
+   ],
+   "summary": "박물관·미술관으로 등록하기 위해 필요한 요건을 정리한 법제처 자료예요.",
+   "body_md": "",
+   "author": "법제처",
+   "year": 2019,
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "https://drive.google.com/file/d/106yaX0SUTROy0A0rUS6bhas-VUoyodOf/view",
+   "drive_files": [],
+   "sample": false,
+   "editable": false,
+   "source": "notion"
+  },
+  {
+   "id": "notion-3d8e42f5a2104ba490d672d418e86193",
+   "kind": "paper",
+   "title": "행안부 어린이놀이시설 안전기준 가이드",
+   "category": "공간·디자인",
+   "tags": [
+    "행정",
+    "어린이놀이시설",
+    "유니버셜 디자인"
+   ],
+   "summary": "해설서(2006) · 안전관리 매뉴얼 (2025)",
+   "body_md": "![](study/img/20261106-143455-npyz7p.webp)\n\n- 해설서(2006)\n\n![](study/img/20261106-143430-8yjsnb.webp)\n\n- 안전관리 매뉴얼 (2025)",
+   "author": "행정안전부",
+   "year": 2020,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view",
+   "drive_files": [
+    {
+     "name": "어린이놀이시설 안전기준 가이드 (06\")",
+     "url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view"
+    },
+    {
+     "name": "어린이놀이시설 안전관리 매뉴얼(25.3월 개정판)",
+     "url": "https://drive.google.com/file/d/1P7EBhtC5OhrRblI3Q1hFFJHVsTN2BecI/view?usp=sharing"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-593d2b95c0f443a2907f1f4847a8a5e5",
+   "kind": "paper",
+   "title": "무장애 실내놀이터 매뉴얼",
+   "category": "공간·디자인",
+   "tags": [
+    "어린이놀이시설",
+    "유니버셜 디자인"
+   ],
+   "summary": "목차 · Chapter 1 머리말",
+   "body_md": "\n![](study/img/20261106-142322-o8sqct.webp)\n\n목차\n\n\n\nChapter 1 머리말\n\n   1.1 매뉴얼의 목적\n\n   1.2 매뉴얼의 활용방법\n\n\n\nChapter 2 무장애 실내놀이터의 이해\n\n   2.1 무장애 실내놀이터의 개념\n\n   2.2 무장애 실내놀이터의 원칙\n\n   2.3 무장애 실내놀이터의 범위\n\n\n\nChapter 3 아동과 놀이활동\n\n   3.1 놀이의 특성\n\n   3.2 놀이 유형\n\n   3.3 장애 및 비장애아동의 신체 활동 범위\n\n\n\nChapter 4 무장애 실내놀이터 설계\n\n   4.1 관련법규\n\n   4.2 항목별 설계 기준\n\n\n\nChapter 5 무장애 실내놀이터 운영\n\n   5.1 무장애 실내놀이터 운영 가이드\n\n\n\n부록\n\n1. 실내놀이터 배리어프리 인증 기준 가이드\n\n2. 포커스그룹 인터뷰\n\n3. 실내놀이터 이용자 설문조사\n\n4. 실내놀이터 사례조사\n\n\n▼원본 파일 다운로드\nhttps://www.accessrights.or.kr/boards/466/view?referer=%2Fpages%2Fbooks",
+   "author": "(사)장애물없는생활환경시민연대",
+   "year": 2023,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view",
+   "drive_files": [
+    {
+     "name": "원문 PDF",
+     "url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-ca2c96b69bfb49609c6dc8b643321772",
+   "kind": "paper",
+   "title": "서울시 유니버설 디자인 적용지침(2022)",
+   "category": "공간·디자인",
+   "tags": [
+    "유니버셜 디자인"
+   ],
+   "summary": "서울시 유니버설 디자인 적용지침 · ▼원본 파일 다운로드",
+   "body_md": "![](study/img/20261106-142711-tm539u.webp)\n![](study/img/20261106-142925-g51j95.webp)\n![](study/img/20261106-142923-ya0dql.webp)\n\n- 서울시 유니버설 디자인 적용지침\n\n\n▼원본 파일 다운로드\nhttps://news.seoul.go.kr/culture/archives/522959",
+   "author": "서울특별시",
+   "year": 2017,
+   "added": "2026-10-28",
+   "updated": "2026-11-06",
+   "drive_url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view",
+   "drive_files": [
+    {
+     "name": "서울시 유니버설디자인 적용지침(2022)",
+     "url": "https://drive.google.com/file/d/1aPOPgev1VwBwFTOlmtNU-fUN5s5eUsUV/view"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "source": "notion"
+  },
+  {
+   "id": "notion-3ff07fb200dd4eab82868e34f5aedcc7",
+   "kind": "paper",
+   "title": "어린이 박물관 전시공간의 색채 및 조도 분포 특성과 관람행동에 관한 기초적 연구",
+   "category": "교육·관람객 연구",
+   "tags": [
+    "어린이놀이시설",
+    "디자인"
+   ],
+   "summary": "어린이 박물관 전시공간의 색과 밝기가 어떻게 분포하는지, 그리고 관람 행동과 어떤 관계가 있는지를 살펴본 기초 연구예요.",
+   "body_md": "",
+   "author": "최준혁 (동명대학교 실내건축학과 조교수)",
+   "year": 2015,
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "https://drive.google.com/file/d/1gBjto9Sznr_45CWcJTQTpSV1g9ekzH2S/view",
+   "drive_files": [],
+   "sample": false,
+   "editable": false,
+   "source": "notion"
+  },
+  {
+   "id": "notion-a7b2cf2f51ed4a2ebe89445687e259a4",
+   "kind": "paper",
+   "title": "글꼴 파일 저작권 바로 알기",
+   "category": "문화정책·경영",
+   "tags": [
+    "디자인",
+    "저작권",
+    "폰트"
+   ],
+   "summary": "글꼴(폰트) 파일을 쓸 때 알아야 할 저작권 내용을 쉽게 안내한 자료예요.",
+   "body_md": "",
+   "author": "저작권캠페인 반듯",
+   "year": 2019,
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "https://drive.google.com/file/d/1C1iwd0MwUhZ2wK3Q9MX58ePbt9bN8nK-/view",
+   "drive_files": [],
+   "sample": false,
+   "editable": false,
+   "source": "notion"
+  },
+  {
+   "id": "notion-50e4f7f75f5c4c8fb08b2f0148bc670d",
+   "kind": "note",
+   "title": "LED",
+   "category": "전시 기술·하드웨어",
+   "tags": [
+    "하드웨어",
+    "LED",
+    "실감/영상"
+   ],
+   "body_md": "## 픽셀 피치 \n\n### **LED전광판의 픽셀 피치란?**\n\n우리가 시청자 입장에서 LED전광판에서 표출되는 영상을 보면 그냥 연속된 이미지로만 보입니다. 하지만 그 연속된 이미지는 수많은 점들이 각각의 색상을 나타내어 만들어집니다**. 이 때, 그 점들을 픽셀(Pixel) 또는 도트(Dot)라고 부릅니다.**그리고 **그 픽셀 간의 거리를 픽셀 피치**라고 부릅니다. 그런데 많은 사람들이 픽셀 피치를 잘 못 이해하고 있습니다**. 픽셀 피치는 픽셀의 오른쪽 끝과 다음 픽셀의 왼쪽 끝이 아니라 픽셀 정중앙에서 다음 픽셀의 정중앙까지의 거리를 말합니다.**\n\n![](study/img/50e4f7f7-1-6a1f702c.webp)\n\n그런데 LED전광판의 가격을 알아보기 위해서 픽셀 피치에 대해 정확히 알아야 하는 이유는 **픽셀 피치에 따라 해상도가 달라지기 때문**입니다. 해상도라는 말은 많이 들어보셨을 겁니다. TV 광고를 보면 삼성이나 LG에서 '4K TV', '8K TV'를 판매하는 영상을 많이 보셨을 겁니다. 이때, 4K, 8K라는 의미는 해상도를 말하는 겁니다. **여기서 4K란 가로 3,840개의 픽셀의 수와 세로 2,160개의 픽셀 수로 이루어져 있는 스크린을 말합니다.**8K는 4K의 가로와 세로의 픽셀 수가 2배로 늘어난 것을 말합니다.**한마디로 해상도란 스크린 화면의 가로 픽셀의 총수량과 세로 픽셀의 총수량을 곱한 것을 말합니다.**\n\n![](study/img/50e4f7f7-2-b50ff52b.webp)\n\n_LED전광판 설치 사례입니다. 사진의 LED전광판은 픽셀 피치 1.56mm이며 해상도는 4K 입니다. 이 전광판의 가로 사이즈는 6,000mm 이며, 높이는 3,375mm 입니다._\n\n### LED전광판의 해상도는 어떻게 구할까요?\n\n해상도를 계산하는 방법은 아주 간단합니다. 그냥 LED전광판의 가로 크기를 픽셀 피치로 나누면 LED전광판의 가로 해상도가 나오고, 세로 크기를 픽셀 피치로 나누면 세로 해상도가 나옵니다. 정말 간단하죠? 그렇다면 LED전광판의 픽셀 피치가 좁으면 좁을수록 어떻게 될까요? 픽셀의 수량이 늘어나면서 해상도가 올라가게 됩니다. 그리고 해상도가 올라가면 선명도가 올라가고 화질이 좋아집니다.\n\n[https://idplan.tistory.com/entry/‘LED전광판-가격’-LED픽셀-피치에-따라-달라지는-이유는](https://idplan.tistory.com/entry/‘LED전광판-가격’-LED픽셀-피치에-따라-달라지는-이유는)\n\n### **최적의 시청 거리**\n\n전광판의 사용 환경에 따라 어떤 규격의 전광판을 사용할지 결정할 수 있게 될 텐데 픽셀피치 간 **최적의 시청 거리**를 알아두시면 좋습니다.\n\n| 픽셀피치 (Pixel Pitch) | 최소 시청 거리 |\n|---|---|\n| 5mm | 5M |\n| 4mm | 4M |\n| 3mm | 3M |\n| 2mm | 2M |\n| 1.2mm | 1.2M |\n\n쉽게 말해서 최적의 시청 거리는 **제품의 픽셀피치 밀리미터(mm)를 미터(M)로 환산**하면 됩니다. 따라서 픽셀피치 4mm의 엘이디 전광판은 4M 이상에서 볼 때 적합하다고 할 수 있습니다.\n\n[https://m.blog.naver.com/firstmecha/223273076815](https://m.blog.naver.com/firstmecha/223273076815)\n\n> **LED전광판 가격 픽셀 피치에 따라 달라지는 이유**\n\n위의 내용을 모두 이해하셨다면 LED전광판 가격이 픽셀 피치에 따라 달라지는 이유를 짐작하셧을겁니다. LED전광판 가격이 픽셀 피치에 따라 달라지는 이유는 뭘까요? 위에서 픽셀 피치가 좁을수록 픽셀의 수량이 늘어난다고 했습니다. 픽셀 수량이 늘어난다는 것은 LED칩의 수량이 늘어나는 겁니다. LED칩의 수량이 늘어나니깐 자연적으로 가격도 올라가게 됩니다.\n\n위의 내용을 모두 이해하셨는지 확인하기 위해 픽셀 피치 구하는 문제를 드리겠습니다. 한번 맞춰 보세요.\n\nTEST ) A라는 학교에서 학교 강당 한 쪽 벽면에 LED전광판을 설치하려고 합니다. 그 벽면의 크기는 가로 8미터이고 높이는 6미터입니다. 이 학교에서 원하는 해상도는 4K라고 가정한다면 이 벽면 크기에 맞게 4K 해상도의 LED전광판을 설치하려면 몇 미리 픽셀 피치를 사용해야 할까요? ( 4K 해상도는 가로 3,840px , 높이 2,160px이며, 가능한 픽셀 피치를 모두 선택해 주세요)\n\n1. 픽셀 피치 : 1.56mm\n2. 픽셀 피치 : 1.875mm\n3. 픽셀 피치 : 2mm\n4. 픽셀 피치 : 2.5mm\n5. 픽셀 피치 : 3mm\n\n정답은 1번, 2번, 3번 입니다. 4번과 5번은 정답이 될 수 없습니다. 문제 풀이를 해볼까요? 픽셀 피치를 구하기 위해서는 먼저 학교 강당의 벽면 크기를 mm로 변환해야 합니다. 벽면의 크기를 mm로 변환하면, 가로 8,000mm 높이 6,000mm가 나옵니다. 그리고 4K의 해상도는 가로 3,840px 세로 2,160px입니다. 그다음 벽면 가로 크기를 4K 가로 해상도로 나눠줍니다. 그러면 약 2.083이 나옵니다. 이 말뜻은 픽셀 피치가 2.083보다 낮아야 한다는 것입니다. 그렇기 때문에 보기 중에 2.083보다 낮은 숫자는 1번과 2번, 그리고 3번이 됩니다.\n\n## 플렉서블 LED \n\n**Impression TGF Series**\n\n## **필름처럼 가볍고 휘는 특성을 가진 투명 제품**\n\n별도의 구조물이 필요 없이 필름처럼 가볍고 휘는 특성을 가진 투명 LED 제품\n\nTGF 시리즈는 필름처럼 가볍고 휘는 특성을 가진 투명 LED입니다. 해상도가 뛰어나며, 별도의 구조물이 필요 없어 디자인의 품격을 유지하면서도 크기와 형태에 유연한 투명 디스플레이 구현이 가능합니다.”\n\n- Seamless(frameless) 고해상도 투명 대형 디스플레이 구현: 패널 길이 120cm ~ 150cm로, 높이 기준 240cm ~ 300cm까지 seamless로 설치, 길이는 무제한\n- 1mm 내외의 초 박형으로 유리창 등에 부착 설치(non-adhesive; 옵션)\n- 초 경량(2.0kg/㎡):전원 및 컨트롤러 제외\n- 50~70% 이상의 높은 시스템 투과율 (눈에 거슬리는 프로파일, 기둥 등이 없음)\n- 160도 이상의 시야 각 제공\n- 고해상도 지원 : 65,536 pixels/㎡ (160,000 pixels/㎡ 추가출시)\n\n![](study/img/50e4f7f7-3-737e7460.webp)\n\n[https://displayhub.co.kr/portfolio/impression-tgf-series투명-필름-스크린/](https://displayhub.co.kr/portfolio/impression-tgf-series투명-필름-스크린/)",
+   "summary": "## 픽셀 피치 ",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-29",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-365232d573214679afceb9b179d1a7ed",
+   "kind": "note",
+   "title": "인쇄/제본 용어",
+   "category": "시공·자재",
+   "tags": [
+    "인쇄/제본/출력",
+    "도련(돈보)"
+   ],
+   "body_md": "### **돈보선/ 도련**\n\n처음에 편집디자인에 대해 잘 모를 때 이야기입니다. 인쇄소에 파일을 보냈을 때 인쇄소에서 다시 연락이 옵니다. 돈보선(도련)이 하나도 안 빠져 있다는 연락을 받은적이 있어요.\n\n재단선: 검은색 선표시에선 재단선이라고 합니다. 실제로 종이가 잘려서 나오는 영역입니다.\n\n![](study/img/365232d5-1-c2d61a8e.webp)\n\n실제로 많은 종이를 놓고 같이 잘라보았을 때 나는 정확하게 일자로 잘랐다고 생각하고 실제로 종이를 보면 밀려서 잘린 경우가 있어요. 인쇄에서도 모든 인쇄가 끝나면 재단을 합니다. 인쇄소에선 재단할 때 저처럼 손으로 재단하는 게 아니라 기계가 재단을 합니다. 많은 양의 종이를 한 번에 재단할 경우 종이 밀림 현상이 있게 됩니다. 바탕에 색상 혹은 이미지가 가득 있을 경우에는 밀려서 잘릴 경우에 난 가득 이미지를 채우고 싶은데 밀렸을 경우 흰색이 보일 수도 있습니다. 어떤 건 흰색이 보이고 어떤 건 내가 원하던 색상이 다 채워져서 나오면 이건 인쇄사고입니다.\n\n![](study/img/365232d5-2-636bbab5.webp)\n\n![](study/img/365232d5-3-bb94b952.webp)\n\n![](study/img/365232d5-4-1808d5ed.webp)\n\n![](study/img/365232d5-5-dce9cff3.webp)\n\n종이가 밀렸을 경우에도 내가 원하는 색상과 이미지가 잘려 보이지 않게 하기 위해서 여분을 더 주는 것입니다. 그 여분을 도련이라고 말합니다. 반드시 인쇄물일 경우에는 도련 설정을 해줘야 합니다.\n\n책자, 리플렛, 포스터, 등 도련을 사방 3mm씩 줘야 합니다.\n\n포스터, 배너, 스티커, 명함은 도련 1mm~1.5mm 정도 줍니다.\n\n하지만 인쇄소마다 도련값 설정이 다른 곳도 있으니 인쇄소에 잘 확인하고 진행하시면 됩니다.\n\n제가 다니고 있는 회사에서 거래하는 인쇄소는 전단지, 포스터, 리플렛, 브로슈어, 책자를 진행할 경우에는 무조건 3mm씩 주고 진행하고 있고요.\n\n가끔 인쇄소가 아닌 디지털 인쇄를 맡기는 경우에는 1~2mm 정도 도련을 주는 곳도 있습니다.\n\n그러니 업체마다 다르니 확인하고 진행해주시면 됩니다.\n\n![](study/img/365232d5-6-08f4d0f8.webp)\n\n[https://gardengreem.tistory.com/42](https://gardengreem.tistory.com/42)\n\n### **A3 파일을 A4로 축소 제본할 경우**\n\n1) 보통은 A3 파일을 인쇄소에서 축소해서 제본 가능\n\n2) 그러나 축소할 경우 파일이 깨지는 경우 발생 그럴 경우 A4로 작업 요청할 수 있음\n\n3) A3 파일을 인디자인에서 변경시 시간이 너무 오래 걸리기 때문에 A3 파일을 JPG로 변환해서 축소해서 인디자인에 얹는 방식으로 작업 요청하면 됨",
+   "summary": "### **돈보선/ 도련**",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-29",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-7418a4fffe634528ac0112794d232860",
+   "kind": "note",
+   "title": "AR/VR/MR/XR 용어 정리",
+   "category": "전시 기술·하드웨어",
+   "tags": [
+    "연출기법",
+    "실감/영상",
+    "체험기법"
+   ],
+   "body_md": "![](study/img/7418a4ff-1-7df8df2f.webp)\n\n![](study/img/7418a4ff-2-96100930.webp)\n\n![](study/img/7418a4ff-3-ca758fd9.webp)\n\n![](study/img/7418a4ff-4-7a940544.webp)",
+   "summary": "![](notes/img/7418a4ff-1-7df8df2f.webp)",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-29",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-61cdb02034014a979080048b37ec0058",
+   "kind": "note",
+   "title": "쉐이더 리스트",
+   "category": "전시 기술·하드웨어",
+   "tags": [
+    "연출기법",
+    "실감/영상"
+   ],
+   "body_md": "3d 그래픽을 이용해 카툰 효과를 주는 것\n\n기타 쉐이더\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfODEg/MDAxNjY4ODg2ODEzNTA2.tyhljQXY-P6E7BhrNcIvjTSjTTG-V7T6l6j_TFRAPQcg._shHU8k3Mxy0PhF9PuIQK_MhnkGuu68NtXiFQG6lX6Mg.GIF.dollylene/Final.gif?type=w773)\n\n[https://www.blacksaltgames.com/2021/05/26/tutorial-creating-birds-particles-using-unity-and-shader-graph/](https://www.blacksaltgames.com/2021/05/26/tutorial-creating-birds-particles-using-unity-and-shader-graph/)\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjQ3/MDAxNjY4ODg2ODUxMjUw.jb_OSVFhactiFHmx1rCD8_Wp5LWU9sIfRoUEEcH9b6Ig.7rpP25hAQKxsxSHkUmh4pgtyQGmyTdVWmVG2B3RL1Lgg.PNG.dollylene/E1aD6wZVUAEWAMl-300x300.png?type=w773)\n\n만들어둔 모델링을 가지고 애니메이션을 주는 튜토리얼이 있었다\n\n이런 것도 되는구나 싶어서 놀랐다\n\n[https://www.youtube.com/watch?v=ynHFnTkd8-Y](https://www.youtube.com/watch?v=ynHFnTkd8-Y)\n\n[https://www.artstation.com/artwork/4b41NY](https://www.artstation.com/artwork/4b41NY)\n\n물 쉐이더를 만들어야 해서 이것저것 찾아보다가 발견한 것\n\n영상 보면서 물도 물인데\n\n돌이랑 야자수가 참 귀여워서 내가 만든 걸 한 번 슥 보고 한숨이 푹 나온 영상이다 ㅠ\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjky/MDAxNjY4ODg3MDU5MzQ3.lC5QV6WRVz32ul2Js1V41qnkmuJe0BVJniSkf-174Gcg.UrC2TiIzDP8_lhnHcdtFOBB_lt9aXorhDPxsL6nw4NAg.PNG.dollylene/toon-shader-demo.png?type=w773)\n\n[https://roystan.net/articles/toon-shader/](https://roystan.net/articles/toon-shader/)\n\n툰 쉐이더\n\n너무 빤딱빤딱한 느낌이 들긴 하는데, 이런 카툰렌더링은 어떻게 하는 건지 궁금하긴 하다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjgg/MDAxNjY4ODg3MTM1MTAw.B4ZiGkgSI_jzaOj5Je5zFZ0JRbHCt3EjX-phoNge_UIg.AjHK0i3taNUZKMRciOTMRbjwTfEmpp83XeemEyhRK1Ug.PNG.dollylene/unity-flat-low-poly-shader-01.png?type=w773)\n\n[https://hextantstudios.com/unity-flat-low-poly-shader/](https://hextantstudios.com/unity-flat-low-poly-shader/)\n\n플랫 쉐이더?\n\n이런 스타일도 귀여워서 좋아한다. 눈도 편안하고...\n\n오리 게임(Untiled Goose Game)도 이렇게 렌더링 한 건가? 같은 방식처럼 보이는데 맞는진 모르겠따\n\n[https://www.youtube.com/watch?v=d\\_w0Uv9hk7o](https://www.youtube.com/watch?v=d_w0Uv9hk7o)\n\n로우폴 그래픽에도 흥미가 있어서 따로 링크를 저장해뒀던 영상\n\n에셋 스토어에서 판매하는 팩이었는데 지원중단 예정이라고 ㄱ-... 구경하고 싶어도 그림의 떡이 됨\n\n[https://www.youtube.com/watch?v=wt2yYnBRD3U](https://www.youtube.com/watch?v=wt2yYnBRD3U)\n\n참 좋아하는 게임중 하나인 Journey\n\n저니의 배경이 배경인지라 게임 플레이 내내 모래를 봐야 하는데\n\n모래 그래픽이 참 아름답다. 그 모래를 어떻게 만들었는지 설명하는 영상\n\n모래의 Specular라고 해야 하나? 반짝반짝 빛나는 표현이 정말 좋았던 기억이 난다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjgz/MDAxNjY4ODg3NTg2NTYx.zUwSTYuQdBe4sp3Q1qm5cqGeG11Aki7kZmAvCK1a1pUg.ZDEp9KUfWsp7csnG0Ss6brD5keV_3dFFVhyMPI7WHmQg.PNG.dollylene/20221120045300.png?type=w773)\n\n[https://cyangamedev.wordpress.com/2020/10/06/watercolour-shader-experiments/](https://cyangamedev.wordpress.com/2020/10/06/watercolour-shader-experiments/)\n\n수채화 쉐이더\n\n가끔 보면 이런 스타일의 작업물이 보이는데 볼 때 마다 어떻게 만든건지 신기해서 꽤 오래 들여다본 기억이 있다\n\n동화를 테마로 한 게임이나, 그림/화가 등을 주제로 한 게임에 적용하면 참 예쁠 것 같다\n\n그렇지 않은 게임에서도 어느 한 컷씬이나 구간에 부분적으로 적용하면 인상깊은 연출이 가능할 거 같기도 하고\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMjAg/MDAxNjY4ODg3NzkzMzQ1.Ud1TiXZzMM52hk6c_d7DwDeyROchPuxpl5CodI3EfB0g.tOxO--3JM5U2zywixz379qsiuTiWxjnqaCSBqkipIFQg.GIF.dollylene/5db80957cf8a4.gif?type=w773)\n\n[https://80.lv/articles/crumble-platform-game-mechanics-shaders-in-unity/](https://80.lv/articles/crumble-platform-game-mechanics-shaders-in-unity/)\n\n풀 쉐이더\n\n지금 만드는 건 이렇게 잔디가 무성한 공간이 아니긴 하지만...\n\n캐릭터의 움직임에 따라 풀이 움직인다든가, 땅에 발자국이 찍힌다든가, 눈이 파인다든가 하는 거에 흥미가 있어서 킵해뒀던 링크\n\n[https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)\n\n[**Setting Up Interactive Grass Shaders in Unity**](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)[ Check out a cool shader by StudioRoss and watch a tutorial by MinionsArt. 80.lv](https://80.lv/articles/setting-up-interactive-grass-shaders-in-unity/)\n\n![](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fcdn.80.lv%2Fapi%2Fupload%2Fmeta%2F18423%2Fimages%2F61ee7fef72373%2Fcontain_1200x630.jpg%22&type=ff500_300)\n\n위와 같은 이유로 킵해둔 링크\n\n이렇게 플레이에 생동감을 불어넣어주는 기술이 참 좋다\n\n게임에 몰입감을 더해준다고 해야하나... 제대로 움직이고 있다는 느낌도 들고\n\n[https://guoqin.artstation.com/projects/Jlk4ED](https://guoqin.artstation.com/projects/Jlk4ED)\n\n[**windy grass unity shader graph**](https://guoqin.artstation.com/projects/Jlk4ED)[ This is my third shader .I have made a windy grass shader with unity shader graph! I will make more various shaders and share them on Artstaion! guoqin.artstation.com](https://guoqin.artstation.com/projects/Jlk4ED)\n\n![](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fcdna.artstation.com%2Fp%2Fassets%2Fvideos%2Fimages%2F018%2F316%2F456%2Flarge%2Fqin-guo-maxresdefault.jpg%3F1558940893%22&type=ff500_300)\n\n바람에 흔들리는 풀\n\n한 번 보고 따라해봐야지 했던 튜토리얼인데\n\n아직도 안 따라해봤음.. 헉...\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfOTYg/MDAxNjY4ODg4MjQwODkz.N-4FqEwaU9h1JftKlWyVdxVBGhPUHDBiR0DwGxIiV40g.g8zuUULlnG7XW-2v97ve-pR8kLQenJD4MW6nHcBmu68g.PNG.dollylene/20221120050143.png?type=w773)\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfNDkg/MDAxNjY4ODg4MjQwOTA4.wDEZbGQTPxGz5SCCrKjOsMtbbuMzwsLGqQ_yVj9CnR4g._kdGFWZar8dSzP3pZICuBZroeszROeloZM_-Wj-v5vkg.JPEG.dollylene/mumin-can-gulerer-liquids.jpg?type=w773)\n\n[https://www.artstation.com/artwork/3dk0KY](https://www.artstation.com/artwork/3dk0KY)\n\n예쁘다거나 취향이라거나 그런 건 아니지만\n\nvfx에도 꽤 관심이 있어서 종종 들여다보는데\n\n마침 곧 만들 물이랑 관련있는 거라 관심이 갔다\n\n배에 널려있는 해산물이 있는데, 거기에서 물방울이 뚝뚝 떨어져도 좋겠다~ 싶어서...\n\n[https://www.youtube.com/watch?v=tKtkvlXooJc](https://www.youtube.com/watch?v=tKtkvlXooJc)\n\n레퍼런스를 가지고 이펙트를 만드는 튜토리얼 영상\n\n마침 영상에서 참고한 레퍼런스가 내가 참 좋아하던 게임 작업물이라...\n\n대략 이렇게 만들었겠구나~ 싶은 걸 알 수 있을 거 같아 저장해놨던 영상이다\n\n![](https://postfiles.pstatic.net/MjAyMjExMjBfMTMg/MDAxNjY4ODg4Mzc3Mzcz.9WCpWpYIakC4aZ3i6OQUXT339Eyihsthm0AhgbWGsXQg.KCsLa3kf9Uvu_71cL5yun4hQWThRv2W5GRKBa6KYGOcg.PNG.dollylene/20221120050601.png?type=w773)\n\n바로 이것 (아이고 정말 예쁘다)\n\n팀이 해체되어 서버만 열려있는 채 개발이 중단된 게임이라....\n\n새로운 작업물은 더 나오지 않을 거란 게 너무 아쉽다...\n\n이 개발팀이 만드는 모든 아트웍을 좋아했는데 정말 너무너무 아쉽다...\n\n[https://blog.naver.com/dollylene/222933195806](https://blog.naver.com/dollylene/222933195806)",
+   "summary": "3d 그래픽을 이용해 카툰 효과를 주는 것",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-111bcc57609c80829a0efc429e655d50",
+   "kind": "note",
+   "title": "바리솔",
+   "category": "시공·자재",
+   "tags": [
+    "시공",
+    "설계"
+   ],
+   "body_md": "[https://mimostudio.tistory.com/228](https://mimostudio.tistory.com/228)",
+   "summary": "[https://mimostudio.tistory.com/228](https://mimostudio.tistory.com/228)",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-c9e77284f75f4cdea5f628a11cac0915",
+   "kind": "note",
+   "title": "디멘션",
+   "category": "시공·자재",
+   "tags": [
+    "디멘션/치수"
+   ],
+   "body_md": "[https://www.dimensions.com/element/6-year-old-children-kids](https://www.dimensions.com/element/6-year-old-children-kids)",
+   "summary": "[https://www.dimensions.com/element/6-year-old-children-kids](https://www.dimensions.com/element/6-year-old-children-kid",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-56d58677c58e4e7c89e9416d2d61841b",
+   "kind": "note",
+   "title": "전시관 예산 잡기",
+   "category": "예산·공무",
+   "tags": [
+    "예산/공무"
+   ],
+   "body_md": "## 평당 300\n\n- 최소 금액이라고 생각하면 되는 기준.\n- 예쁜 그래픽 패널과 미디어 테이블 정도 구축 가능\n\n## 평당 700-800\n\n- 적정 금액. 여유롭게 매체를 넣을 수 있는 수준\n- (단, 유물 전시는 쇼케이스가 있어서 쇼케이스 가격에 따라 비용 차이가 있다)\n\n## 철거와 기존 시설 활용 여부\n\n- 완전 철거는 비용 차이가 조금 있다고 보면 된다.\n- 사업비의 5%는 철거비로 잡으면 됨 (인건비+폐기물 처리비용)",
+   "summary": "## 평당 300",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-28",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-1b8da3dcc10f48b897e4ae3482f468df",
+   "kind": "note",
+   "title": "다이크로익 필름",
+   "category": "시공·자재",
+   "tags": [
+    "시공",
+    "설계",
+    "필름"
+   ],
+   "body_md": "![](study/img/1b8da3dc-1-e1e8382a.webp)\n\n![](study/img/1b8da3dc-2-ae89f9af.webp)",
+   "summary": "![](notes/img/1b8da3dc-1-e1e8382a.webp)",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-29",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "notion-9589a44037104d00a99ed04a3b39c0dc",
+   "kind": "note",
+   "title": "프로젝터",
+   "category": "전시 기술·하드웨어",
+   "tags": [
+    "하드웨어",
+    "실감/영상",
+    "연출기법",
+    "프로젝터해상도"
+   ],
+   "body_md": "> **빔프로젝터 해상도**\n\n첫째 **SVGA** : 800 x 600 개의 픽셀로 이루어져있고 가로가 800 세로가 600 개로 이루어져 화면 비율은 4:3이 되겠습니다.\n\n둘째 **XGA** : 1024 x 768 개의 픽셀로 이루어져 있고 마찬가지로 화면 비율은 4:3입니다.\n\n셋째 **WXGA** : 1280 x 800 개의 픽셀로 이루어져 있고 화면 비율은 8:5 비율입니다.\n\n넷째 **FULL HD**: 1920 x 1080 개의 픽셀로 이루어져 있고 화면 비율은 16:9 비율입니다.\n\n✅ **나쁜예시) 4K 프로젝터에 FULL HD 영상을 연출할 경우**\n\n![](study/img/9589a440-1-1c727570.webp)\n\n_(픽셀은 화면을 이루고 있는 점을 이야기 하는 것으로 도트라고도 합니다)_\n\n[https://m.blog.naver.com/beamsurvival/220313065914](https://m.blog.naver.com/beamsurvival/220313065914)",
+   "summary": "> **빔프로젝터 해상도**",
+   "author": "",
+   "year": "2026",
+   "added": "2026-10-28",
+   "updated": "2026-10-29",
+   "drive_url": "",
+   "source": "notes-migrate",
+   "editable": true
+  },
+  {
+   "id": "post-camera-moving-terms-20261027",
+   "kind": "post",
+   "title": "영상·모션 용어 모음 (카메라 기법 + 글자 효과)",
+   "category": "영상·콘텐츠 제작",
+   "tags": [
+    "카메라무빙",
+    "영상용어",
+    "글자효과",
+    "모션그래픽",
+    "영상프롬프트"
+   ],
+   "summary": "카메라 무빙·카메라 기법 용어와 글자 효과(모션 타이포) 용어를 한곳에 모아 둔 글. 예시는 각 Threads 원문에서 확인해요.",
+   "body_md": "영상·모션 작업을 맡길 때 말로만 설명하기보다, 정확한 용어로 말하고 싶을 때 참고하려고 모아 두었어요.\n\n## 카메라 무빙\n\n「화면이 옆으로 쓱 지나가게」 대신 쓰는 카메라 움직임 용어예요. 예를 들어 **팬**은 카메라 위치는 두고 옆으로 훑기, **달리**는 카메라 자체가 앞뒤로 이동, **줌**은 렌즈로 확대·축소예요. 자주 쓰는 움직임 약 20가지를 움직이는 예시와 함께 볼 수 있어요.\n\n원문: Threads [@giting.kr](https://www.threads.com/@giting.kr) (2026-10-27)\n\n## 카메라 기법 (영상 프롬프트용)\n\nAI로 영상을 만들 때 「표현」보다 「용어」를 정확히 쓰면 결과가 좋아진다는 글이에요. 그림으로 정리된 용어 중 일부예요.\n\n- **카메라의 움직임**: 패닝, 틸트, 돌리 인, 줌 인, 트래킹, 오빗(아크 샷), 크레인 업, 돌리 줌(버티고)\n- **촬영 방식·시간 연출**: 랙 포커스, 핸드헬드, FPV 드론, 더치 앵글, 슬로 모션, 스피드 램프, 타임랩스, 프리즈 프레임\n\n나머지 용어와 그림 예시는 원문에서 확인해요.\n\n원문: Threads [@lebi_cyber](https://www.threads.com/@lebi_cyber)\n\n## 글자 효과 (모션 타이포그래피)\n\n「글자 멋있게」 대신 쓰는 글자 효과 이름이에요. 확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이고, 이런 식으로 자주 쓰는 용어 8가지를 정리해 두었어요. 움직이는 예시는 원문에서 확인해요.\n\n원문: Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)\n",
+   "author": "@giting.kr · @lebi_cyber · @bokmanhi (Threads)",
+   "year": "2026",
+   "added": "2026-11-06",
+   "updated": "2026-11-06",
+   "drive_url": "https://www.threads.com/@giting.kr/post/DfBhloCFGnK",
+   "drive_files": [
+    {
+     "name": "Threads · 카메라 무빙 (@giting.kr, 2026-10-27)",
+     "url": "https://www.threads.com/@giting.kr/post/DfBhloCFGnK"
+    },
+    {
+     "name": "Threads · 카메라 기법 (@lebi_cyber)",
+     "url": "https://www.threads.com/@lebi_cyber/post/DeX3wlzEzMo"
+    },
+    {
+     "name": "Threads · 글자 효과 (@bokmanhi, 2026-10-24)",
+     "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "pinned": false,
+   "deleted": false,
+   "source": "manual"
+  },
+  {
+   "id": "post-motion-type-terms-20261024",
+   "kind": "post",
+   "title": "글자 효과(모션 타이포그래피) 용어 8가지",
+   "category": "영상·콘텐츠 제작",
+   "tags": [
+    "글자효과",
+    "모션그래픽"
+   ],
+   "summary": "「글자 멋있게」 대신 정확한 효과 이름으로 요청하려고 모아 둔 글자 효과 용어 글이에요.",
+   "body_md": "모션 그래픽·영상에서 글자 연출을 맡길 때 「글자 멋있게」라고만 말하기보다, 효과 이름을 정확히 말하고 싶을 때 참고하는 글이에요.\n\n확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이에요. 글에서는 이런 식으로 자주 쓰는 글자 효과 용어 8가지를 정리해 두었고, 움직이는 예시는 원문에서 볼 수 있어요.\n\n원문은 Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@bokmanhi/post/De5NQAGCHd2)\n",
+   "author": "@bokmanhi (Threads)",
+   "year": "2026",
+   "added": "2026-11-06",
+   "updated": "2026-11-06",
+   "drive_url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2",
+   "drive_files": [
+    {
+     "name": "Threads 원문 (@bokmanhi, 2026-10-24)",
+     "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "pinned": false,
+   "deleted": true,
+   "source": "manual",
+   "deleted_at": "2026-11-06"
+  },
+  {
+   "id": "post-halftone-interactive-poster-20261027",
+   "kind": "post",
+   "title": "GPT로 만든 하프톤 인터랙티브 포스터",
+   "category": "영상·콘텐츠 제작",
+   "tags": [
+    "인터랙티브",
+    "하프톤",
+    "AI그래픽"
+   ],
+   "summary": "GPT(Astra)로 만든 하프톤(망점) 스타일 인터랙티브 포스터 예시. 그래픽·연출 아이디어 참고용.",
+   "body_md": "GPT(Astra)로 만든 **하프톤(망점)** 스타일 인터랙티브 포스터 예시예요. 그래픽·인터랙티브 연출 아이디어를 찾을 때 참고용으로 남겨 두었어요.\n\n자세한 움직임·이미지는 원문에서 확인해요.\n\n원문은 Threads [@nono_ai_archive](https://www.threads.com/@nono_ai_archive) (2026-10-27)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq)\n",
+   "author": "@nono_ai_archive (Threads)",
+   "year": "2026",
+   "added": "2026-11-06",
+   "updated": "2026-11-06",
+   "drive_url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq",
+   "drive_files": [
+    {
+     "name": "Threads 원문 (@nono_ai_archive, 2026-10-27)",
+     "url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "pinned": false,
+   "deleted": false,
+   "source": "manual"
+  },
+  {
+   "id": "post-animation-easing-gitingc",
+   "kind": "post",
+   "title": "애니메이션이 싸 보이는 이유: 속도 변화(이징)",
+   "category": "영상·콘텐츠 제작",
+   "tags": [
+    "애니메이션",
+    "이징",
+    "모션"
+   ],
+   "summary": "처음부터 끝까지 같은 속도로 움직이면 로봇처럼 싸 보일 수 있어요. 속도 변화(이징)는 원문 영상에서 확인해요.",
+   "body_md": "AI가 만든 애니메이션이 **처음부터 끝까지 같은 속도**로만 움직이면, 로봇처럼 어색하고 싸 보일 수 있다는 이야기예요.\n\n움직임에 **속도 변화(이징)** 를 주면 훨씬 자연스러워져요. 구체적인 연출은 원문 영상 예시에서 확인하는 게 좋아요.\n\n원문은 Threads [@giting.kr](https://www.threads.com/@giting.kr)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@giting.kr/post/DfW-0nQBI9S)\n",
+   "author": "@giting.kr (Threads)",
+   "year": "",
+   "added": "2026-11-06",
+   "updated": "2026-11-06",
+   "drive_url": "https://www.threads.com/@giting.kr/post/DfW-0nQBI9S",
+   "drive_files": [
+    {
+     "name": "Threads 원문 (@giting.kr)",
+     "url": "https://www.threads.com/@giting.kr/post/DfW-0nQBI9S"
+    }
+   ],
+   "sample": false,
+   "editable": true,
+   "pinned": false,
+   "deleted": false,
+   "source": "manual"
+  }
+ ]
 }
