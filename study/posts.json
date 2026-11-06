@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "posts": [
     {
       "id": "sample-paper",
@@ -75,11 +75,11 @@
         "공사/시설"
       ],
       "summary": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.",
-      "body_md": "",
+      "body_md": "수장고(작품·자료 보관 공간)와 관련된 자료를 모아둔 목록이에요.\n\n![](study/img/20261106-140904-wwo2fe.webp)\n\n",
       "author": "주식회사 이환 등",
       "year": "",
       "added": "2026-10-28",
-      "updated": "2026-10-28",
+      "updated": "2026-11-06",
       "drive_url": "https://drive.google.com/file/d/1t-lwquH_WOEFMizmAnXSwQ4ShoUujEnB/view",
       "drive_files": [
         {
@@ -104,7 +104,7 @@
         }
       ],
       "sample": false,
-      "editable": false,
+      "editable": true,
       "source": "notion"
     },
     {
