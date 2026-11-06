@@ -179,21 +179,26 @@
     {
       "id": "notion-ca2c96b69bfb49609c6dc8b643321772",
       "kind": "paper",
-      "title": "서울시 유니버셜디자인 통합 가이드라인",
+      "title": "서울시 유니버설 디자인 적용지침(2022)",
       "category": "공간·디자인",
       "tags": [
         "유니버셜 디자인"
       ],
-      "summary": "서울시가 공간과 시설에 유니버설 디자인을 적용하기 위해 만든 통합 가이드라인이에요.",
-      "body_md": "",
+      "summary": "서울시 유니버설 디자인 적용지침(2022) · ▼원본 파일 다운로드",
+      "body_md": "![](study/img/20261106-142711-tm539u.webp)\n\n- 서울시 유니버설 디자인 적용지침(2022)\n\n\n\n▼원본 파일 다운로드\nhttps://news.seoul.go.kr/culture/archives/522959",
       "author": "서울특별시",
       "year": 2017,
       "added": "2026-10-28",
-      "updated": "2026-10-28",
+      "updated": "2026-11-06",
       "drive_url": "https://drive.google.com/file/d/1Pryyq3-xfFEL8yOti4QYLtNBCY9wvNtQ/view",
-      "drive_files": [],
+      "drive_files": [
+        {
+          "name": "원문 PDF",
+          "url": "https://drive.google.com/file/d/1Pryyq3-xfFEL8yOti4QYLtNBCY9wvNtQ/view"
+        }
+      ],
       "sample": false,
-      "editable": false,
+      "editable": true,
       "source": "notion"
     },
     {
