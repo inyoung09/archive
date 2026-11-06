@@ -56,7 +56,7 @@ function blocks(L){
    const f=m[1],buf=[];i++;
    while(i<L.length&&!new RegExp('^\\s{0,3}'+(f[0]==='`'?'`':'~')+'{'+f.length+',}\\s*$').test(L[i]))buf.push(L[i++]);
    i++;out+='<pre><code>'+esc(buf.join('\n'))+'</code></pre>';continue;}
-  if(m=/^(#{1,6})\s+(.*?)\s*#*\s*$/.exec(l)){const n=Math.min(m[1].length+2,6);out+='<h'+n+'>'+inline(esc(m[2]))+'</h'+n+'>';i++;continue;}
+  if(m=/^(#{1,6})\s+(.*?)\s*#*\s*$/.exec(l)){const n=Math.min(m[1].length+2,6);const id='h-'+slug(m[2])+'-'+(++_hid);out+='<h'+n+' id="'+id+'" data-lv="'+m[1].length+'">'+inline(esc(m[2]))+'</h'+n+'>';i++;continue;}
   if(/^\s{0,3}([-*_])(\s*\1){2,}\s*$/.test(l)){out+='<hr>';i++;continue;}
   if(/^\s{0,3}>/.test(l)){const buf=[];while(i<L.length&&/^\s{0,3}>/.test(L[i]))buf.push(L[i++].replace(/^\s{0,3}>\s?/,''));out+='<blockquote>'+blocks(buf)+'</blockquote>';continue;}
   if(l.includes('|')&&i+1<L.length&&SEP.test(L[i+1])&&L[i+1].includes('-')){
@@ -70,7 +70,9 @@ function blocks(L){
  }
  return out;
 }
-const md=src=>blocks(String(src||'').replace(/\r\n?/g,'\n').split('\n'));
+let _hid=0;
+const slug=s=>String(s||'').replace(/\u00a0/g,' ').replace(/[*_`~\[\]#]+/g,'').trim().toLowerCase().replace(/[^\w\uac00-\ud7a3\- ]+/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'').slice(0,48)||'sec';
+const md=src=>{_hid=0;return blocks(String(src||'').replace(/\r\n?/g,'\n').split('\n'));};
 
 // ---------- helpers ----------
 const todayKR=()=>new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Seoul'});
@@ -246,14 +248,14 @@ function reader(p){
  const pinBtn=p.pinned
   ?(getTok()?'<button type="button" class="pin on" data-act="pin" data-id="'+esc(p.id)+'" title="즐겨찾기 해제" aria-label="즐겨찾기 해제" aria-pressed="true">★</button>':'<span class="pin on" title="즐겨찾기" aria-label="즐겨찾기">★</span>')
   :(getTok()?'<button type="button" class="pin" data-act="pin" data-id="'+esc(p.id)+'" title="즐겨찾기" aria-label="즐겨찾기" aria-pressed="false">☆</button>':'');
- return '<div class="reader"><div class="racts"><button type="button" class="back" id="rback">← 목록</button>'+pinBtn+(getTok()?'<button type="button" data-act="edit" data-id="'+esc(p.id)+'">수정</button><button type="button" data-act="del" data-id="'+esc(p.id)+'">삭제</button>':'')+'</div>'
+ return '<div class="reader-shell"><div class="reader"><div class="racts"><button type="button" class="back" id="rback">← 목록</button>'+pinBtn+(getTok()?'<button type="button" data-act="edit" data-id="'+esc(p.id)+'">수정</button><button type="button" data-act="del" data-id="'+esc(p.id)+'">삭제</button>':'')+'</div>'
   +'<div class="by">'+esc(catOf(p))+'<span class="kind">'+(KIND[p.kind]||'글')+'</span>'+(p.sample?' <span class="badge">예시</span>':'')+'</div>'
   +'<h1>'+esc(p.title)+'</h1><div class="by">'+esc([byLine(p),p.updated?'마지막 수정 '+p.updated:''].filter(Boolean).join(' · '))+'</div>'
   +'<div class="rtags">'+tagsH(p.tags)+'</div>'
   +lead
   +(body?'<div class="md">'+md(body)+'</div>':'')
   +pdfBlock(p)  // 파일·원문 버튼은 본문 아래 단 한 곳
-  +'</div>';
+  +'</div></div>';
 }
 function editorHtml(p){
  const cats=[...new Set(CFG.categories.map(c=>c.name).concat(pf.posts.map(catOf)))];
@@ -300,6 +302,48 @@ function addFileRow(){
  box.insertAdjacentHTML('beforeend',fileRowHtml('',''));
  const last=box.querySelector('.efrow:last-child .ef-url');if(last)last.focus();
 }
+// ---------- outline (목차) ----------
+let outlineIO=null,outlineOnScroll=null;
+function clearOutline(){
+ if(outlineIO){outlineIO.disconnect();outlineIO=null;}
+ if(outlineOnScroll){removeEventListener('scroll',outlineOnScroll);outlineOnScroll=null;}
+}
+function mountOutline(rd){
+ clearOutline();
+ const shell=rd.querySelector('.reader-shell'),mdEl=rd.querySelector('.reader .md');
+ if(!shell||!mdEl)return;
+ const heads=[...mdEl.querySelectorAll('h3[id],h4[id],h5[id],h6[id]')];
+ if(heads.length<2)return;
+ const min=Math.min(...heads.map(h=>+(h.dataset.lv||h.tagName[1])));
+ const nav=document.createElement('nav');
+ nav.className='outline';nav.setAttribute('aria-label','목차');
+ nav.innerHTML='<div class="olabel">OUTLINE</div><ol class="olist">'+heads.map(h=>{
+  const lv=+(h.dataset.lv||h.tagName[1]);const depth=Math.max(0,Math.min(lv-min,3));
+  const t=esc((h.textContent||'').trim()||'제목');
+  return '<li class="olv'+depth+'"><a href="#'+h.id+'" data-oid="'+h.id+'">'+t+'</a></li>';
+ }).join('')+'</ol>';
+ shell.appendChild(nav);shell.classList.add('has-outline');
+ nav.addEventListener('click',e=>{
+  const a=e.target.closest('a[data-oid]');if(!a)return;e.preventDefault();
+  const el=document.getElementById(a.dataset.oid);if(!el)return;
+  el.scrollIntoView({behavior:RM.matches?'auto':'smooth',block:'start'});
+ });
+ const links=[...nav.querySelectorAll('a[data-oid]')];
+ const setOn=id=>links.forEach(a=>a.classList.toggle('on',a.dataset.oid===id));
+ if(window.IntersectionObserver){
+  const vis=new Map();
+  outlineIO=new IntersectionObserver(es=>{
+   es.forEach(en=>vis.set(en.target.id,en.isIntersecting));
+   let cur=null;for(const h of heads){if(vis.get(h.id))cur=h.id;}
+   if(!cur){for(const h of heads){if(h.getBoundingClientRect().top<=120)cur=h.id;}}
+   if(cur)setOn(cur);
+  },{rootMargin:'-80px 0px -55% 0px',threshold:[0,.25,1]});
+  heads.forEach(h=>outlineIO.observe(h));
+ }else{
+  outlineOnScroll=()=>{let cur=heads[0].id;for(const h of heads){if(h.getBoundingClientRect().top<=120)cur=h.id;}setOn(cur);};
+  addEventListener('scroll',outlineOnScroll,{passive:true});outlineOnScroll();
+ }
+}
 // ---------- navigation ----------
 function route(){
  const h=location.hash;
@@ -345,7 +389,7 @@ function render(){
  if(pf.editing){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;if(tw)tw.hidden=true;rd.hidden=true;ed.hidden=false;return;}
  ed.hidden=true;ed.innerHTML='';
  if(pf.trash){
-  if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.hidden=true;rd.innerHTML='';
+  if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.hidden=true;rd.innerHTML='';clearOutline();
   if(tw){tw.hidden=false;tw.innerHTML=trashView();}
   scrollTo(0,0);return;
  }
@@ -356,10 +400,10 @@ function render(){
   if(p&&isDel(p)){ // 삭제된 글 직접 링크 → 휴지통으로
    if(getTok()){setHash('#trash');return;}
    pf.id=null;
-  }else if(p){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.innerHTML=reader(p);rd.hidden=false;scrollTo(0,0);return;}
+  }else if(p){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;clearOutline();rd.innerHTML=reader(p);rd.hidden=false;mountOutline(rd);scrollTo(0,0);return;}
   pf.id=null;
  }
- rd.hidden=true;rd.innerHTML='';
+ rd.hidden=true;rd.innerHTML='';clearOutline();
  if(!lv1)return;
  const t=pf.theme;
  if(t!==null&&!root.querySelector('.tab[data-theme="'+CSS.escape(t)+'"]'))pf.theme=null;
