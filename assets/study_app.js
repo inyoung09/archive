@@ -1,5 +1,5 @@
-/* 스터디(papers.html): study/posts.json 을 런타임에 불러와 목록·읽기·글쓰기·수정·즐겨찾기를 처리한다. 평문 JSON, 암호화 없음.
-   저장은 GitHub Contents API (토큰은 localStorage archive_gh_token). 토큰이 있을 때만 「수정」·별 토글이 보인다(삭제는 없음). 테스트에서는 localhost 에서만 archive_api_base 로 API 주소를 바꿀 수 있다. */
+/* 스터디(papers.html): study/posts.json 을 런타임에 불러와 목록·읽기·글쓰기·수정·즐겨찾기·휴지통을 처리한다. 평문 JSON, 암호화 없음.
+   저장은 GitHub Contents API (토큰은 localStorage archive_gh_token). 토큰이 있을 때만 「수정」「삭제」·별 토글·휴지통이 보인다. 삭제는 soft-delete(deleted:true). 테스트에서는 localhost 에서만 archive_api_base 로 API 주소를 바꿀 수 있다. */
 (function(){
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -83,12 +83,15 @@ const blurb=p=>{const t=p.kind==='paper'&&p.summary?p.summary:plain(p.body_md)||
 const driveUrl=u=>{const s=safeUrl(u);return s&&/^https:\/\/(drive|docs)\.google\.com\//i.test(s)?s:null;};
 // ---------- state ----------
 const CFG=JSON.parse($('#cfg').textContent);
-const pf={posts:[],loaded:false,failed:false,theme:null,q:'',id:null,busy:false,editing:null};
+const pf={posts:[],loaded:false,failed:false,theme:null,q:'',id:null,busy:false,editing:null,trash:false};
+const isDel=p=>!!(p&&p.deleted);
+const alive=()=>pf.posts.filter(p=>!isDel(p));
+const trashed=()=>pf.posts.filter(isDel);
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
 const sortPosts=l=>[...l].sort((a,b)=>(b.pinned?1:0)-(a.pinned?1:0)||(b.updated||b.added||'').localeCompare(a.updated||a.added||'')||(a.title||'').localeCompare(b.title||'','ko'));
 function groups(){
  const fb=CFG.fallback||'미분류',by={};
- pf.posts.forEach(p=>{const c=(p.category||'').trim()||fb;(by[c]=by[c]||[]).push(p);});
+ alive().forEach(p=>{const c=(p.category||'').trim()||fb;(by[c]=by[c]||[]).push(p);});
  const names=CFG.categories.map(c=>c.name).filter(n=>n!==fb);
  const order=names.concat(Object.keys(by).filter(n=>!names.includes(n)&&n!==fb)).concat([fb]);
  return order.filter(n=>by[n]).map(n=>{const c=CFG.categories.find(x=>x.name===n);return {name:n,desc:c?c.desc:'',list:sortPosts(by[n])};});
@@ -194,9 +197,11 @@ const byLine=p=>[p.author,p.kind==='paper'&&p.year?String(p.year):''].filter(Boo
 const KIND={paper:'자료',note:'메모',post:'글'};
 function l1(){
  const gs=groups();
- if(!pf.posts.length)return '<div class="top1"><h1 class="mega">스터디</h1></div><div class="empty">'+(pf.failed?'글 목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.':'아직 담긴 자료가 없어요. ‘글쓰기’로 시작해 보세요.')+'</div><p style="text-align:center"><button type="button" class="btn" id="wbtn0">글쓰기</button></p>';
- return '<div id="lv1" class="lv1"><h1 class="mega">스터디</h1><div class="strips">'+gs.map((g,i)=>'<button type="button" class="strip s'+(i%9)+'" data-theme="'+esc(g.name)+'" style="z-index:'+(i+1)+'"><span class="st">'+esc(g.name)+'</span><span class="sd">'+esc(g.desc)+'</span><span class="sn">'+String(g.list.length).padStart(3,'0')+'</span><span class="sa" aria-hidden="true">↗</span></button>').join('')+'</div></div>';
+ if(!alive().length)return '<div class="top1"><h1 class="mega">스터디</h1></div><div class="empty">'+(pf.failed?'글 목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.':'아직 담긴 자료가 없어요. ‘글쓰기’로 시작해 보세요.')+'</div><p style="text-align:center"><button type="button" class="btn" id="wbtn0">글쓰기</button></p>'+(getTok()?trashLink():'');
+ return '<div id="lv1" class="lv1"><h1 class="mega">스터디</h1><div class="strips">'+gs.map((g,i)=>'<button type="button" class="strip s'+(i%9)+'" data-theme="'+esc(g.name)+'" style="z-index:'+(i+1)+'"><span class="st">'+esc(g.name)+'</span><span class="sd">'+esc(g.desc)+'</span><span class="sn">'+String(g.list.length).padStart(3,'0')+'</span><span class="sa" aria-hidden="true">↗</span></button>').join('')+'</div>'+(getTok()?trashLink():'')+'</div>';
 }
+const trashLink=()=>'<p class="trashlink"><button type="button" class="btn sm ghost" id="trashbtn" data-act="trash">🗑 휴지통'+(trashed().length?' ('+trashed().length+')':'')+'</button></p>';
+
 function l2(){
  const gs=groups();
  const items=gs.flatMap(g=>g.list.map(p=>{
@@ -207,10 +212,10 @@ function l2(){
     :(getTok()?'<button type="button" class="pin" data-act="pin" title="즐겨찾기" aria-label="즐겨찾기" aria-pressed="false">☆</button>':'');
   return '<article class="item" data-id="'+esc(p.id)+'" data-cat="'+esc(g.name)+'" data-text="'+esc(text)+'"><div class="ih"><h3 tabindex="0" role="link">'+esc(p.title)+(p.sample?' <span class="badge">예시</span>':'')+'<span class="kind">'+(KIND[p.kind]||'글')+'</span></h3>'+star+'</div>'
    +(sm?'<p class="sum">'+esc(sm)+'</p>':'')+'<div class="imeta">'+(byLine(p)?'<span class="by">'+esc(byLine(p))+'</span>':'<span></span>')+((p.tags||[]).length?'<span class="tags">'+tagsH(p.tags)+'</span>':'')+'</div>'
-   +(getTok()?'<div class="acts"><button type="button" data-act="edit">수정</button></div>':'')+'</article>';}));
+   +(getTok()?'<div class="acts"><button type="button" data-act="edit">수정</button><button type="button" data-act="del">삭제</button></div>':'')+'</article>';}));
  return '<div id="lv2" class="lv2" hidden><div class="l2top"><button type="button" class="back" id="pback">← 테마</button><input type="search" id="pq" placeholder="제목·저자·요약·태그 검색" aria-label="검색"><button type="button" class="btn sm wbtn" id="wbtn">글쓰기</button></div>'
   +'<div class="tabbar" id="ptabs" role="tablist"><button type="button" class="tab on" data-theme="">전체</button>'+gs.map(g=>'<button type="button" class="tab" data-theme="'+esc(g.name)+'">'+esc(g.name)+'</button>').join('')+'</div>'
-  +'<p class="pcount" id="pcount"></p><div class="items" id="plist">'+items.join('')+'</div><div class="none" id="pnone">검색 결과가 없어요.</div></div>';
+  +'<p class="pcount" id="pcount"></p><div class="items" id="plist">'+items.join('')+'</div><div class="none" id="pnone">검색 결과가 없어요.</div>'+(getTok()?trashLink():'')+'</div>';
 }
 function fileHref(u){const s=safeUrl(u);return s&&/^https?:\/\//i.test(s)?s:null;}
 function fileListOf(p){
@@ -241,7 +246,7 @@ function reader(p){
  const pinBtn=p.pinned
   ?(getTok()?'<button type="button" class="pin on" data-act="pin" data-id="'+esc(p.id)+'" title="즐겨찾기 해제" aria-label="즐겨찾기 해제" aria-pressed="true">★</button>':'<span class="pin on" title="즐겨찾기" aria-label="즐겨찾기">★</span>')
   :(getTok()?'<button type="button" class="pin" data-act="pin" data-id="'+esc(p.id)+'" title="즐겨찾기" aria-label="즐겨찾기" aria-pressed="false">☆</button>':'');
- return '<div class="reader"><div class="racts"><button type="button" class="back" id="rback">← 목록</button>'+pinBtn+(getTok()?'<button type="button" data-act="edit" data-id="'+esc(p.id)+'">수정</button>':'')+'</div>'
+ return '<div class="reader"><div class="racts"><button type="button" class="back" id="rback">← 목록</button>'+pinBtn+(getTok()?'<button type="button" data-act="edit" data-id="'+esc(p.id)+'">수정</button><button type="button" data-act="del" data-id="'+esc(p.id)+'">삭제</button>':'')+'</div>'
   +'<div class="by">'+esc(catOf(p))+'<span class="kind">'+(KIND[p.kind]||'글')+'</span>'+(p.sample?' <span class="badge">예시</span>':'')+'</div>'
   +'<h1>'+esc(p.title)+'</h1><div class="by">'+esc([byLine(p),p.updated?'마지막 수정 '+p.updated:''].filter(Boolean).join(' · '))+'</div>'
   +'<div class="rtags">'+tagsH(p.tags)+'</div>'
@@ -298,10 +303,11 @@ function addFileRow(){
 // ---------- navigation ----------
 function route(){
  const h=location.hash;
+ pf.trash=h==='#trash';
  let m=/^#id=(.*)$/.exec(h);
- pf.id=m?decodeURIComponent(m[1]):null;
+ pf.id=(!pf.trash&&m)?decodeURIComponent(m[1]):null;
  m=/^#theme=(.*)$/.exec(h);
- pf.theme=m?decodeURIComponent(m[1]):null;
+ pf.theme=(!pf.trash&&m)?decodeURIComponent(m[1]):null;
  if(pf.id){pf.last=pf.last||null;}
  render();
 }
@@ -315,8 +321,18 @@ function reveal(){const ss=[...document.querySelectorAll('#lv1 .strip')];if(RM.m
   x.style.transitionDelay=Math.min(k++,6)*70+'ms';x.classList.remove('pre');setTimeout(()=>{x.style.transitionDelay='';},1300);}),{threshold:.18});
  ss.forEach(x=>io.observe(x));}
 let built=false;
+function trashView(){
+ const list=sortPosts(trashed());
+ if(!getTok())return '<div class="empty">휴지통은 토큰이 있을 때만 볼 수 있어요.</div>';
+ return '<div id="trash" class="trash"><div class="l2top"><button type="button" class="back" id="tback">← 스터디</button><h2 class="th">🗑 휴지통</h2></div>'
+  +'<p class="imgst">삭제한 글이에요. 「되살리기」로 목록에 다시 넣을 수 있어요. Drive 파일은 그대로 남아 있어요.</p>'
+  +(list.length?('<div class="items">'+list.map(p=>'<article class="item" data-id="'+esc(p.id)+'"><div class="ih"><h3>'+esc(p.title)+'<span class="kind">'+(KIND[p.kind]||'글')+'</span></h3></div>'
+   +'<div class="imeta"><span class="by">'+(p.deleted_at?('삭제 '+esc(p.deleted_at)):'')+'</span></div>'
+   +'<div class="acts"><button type="button" data-act="restore">되살리기</button></div></article>').join('')+'</div>')
+   :'<div class="empty">휴지통이 비어 있어요.</div>')+'</div>';
+}
 function buildLists(){
- $('#content').innerHTML=l1()+(pf.posts.length?l2():'')+'<div id="rd" hidden></div><div id="ed" hidden></div>';
+ $('#content').innerHTML=l1()+(alive().length?l2():'')+'<div id="trashwrap" hidden></div><div id="rd" hidden></div><div id="ed" hidden></div>';
  built=true;pf.shown=undefined;
  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
  reveal();
@@ -324,14 +340,23 @@ function buildLists(){
 function render(){
  if(!pf.loaded)return;
  if(!built)buildLists();
- const root=$('#content'),lv1=root.querySelector('#lv1'),lv2=root.querySelector('#lv2'),rd=$('#rd'),ed=$('#ed');
+ const root=$('#content'),lv1=root.querySelector('#lv1'),lv2=root.querySelector('#lv2'),tw=$('#trashwrap'),rd=$('#rd'),ed=$('#ed');
  if(!rd)return;
- const showReader=pf.id!==null;
- if(pf.editing){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.hidden=true;ed.hidden=false;return;}
+ if(pf.editing){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;if(tw)tw.hidden=true;rd.hidden=true;ed.hidden=false;return;}
  ed.hidden=true;ed.innerHTML='';
+ if(pf.trash){
+  if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.hidden=true;rd.innerHTML='';
+  if(tw){tw.hidden=false;tw.innerHTML=trashView();}
+  scrollTo(0,0);return;
+ }
+ if(tw){tw.hidden=true;tw.innerHTML='';}
+ const showReader=pf.id!==null;
  if(showReader){
   const p=pf.posts.find(x=>x.id===pf.id);
-  if(p){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.innerHTML=reader(p);rd.hidden=false;scrollTo(0,0);return;}
+  if(p&&isDel(p)){ // 삭제된 글 직접 링크 → 휴지통으로
+   if(getTok()){setHash('#trash');return;}
+   pf.id=null;
+  }else if(p){if(lv1)lv1.hidden=true;if(lv2)lv2.hidden=true;rd.innerHTML=reader(p);rd.hidden=false;scrollTo(0,0);return;}
   pf.id=null;
  }
  rd.hidden=true;rd.innerHTML='';
@@ -340,7 +365,7 @@ function render(){
  if(t!==null&&!root.querySelector('.tab[data-theme="'+CSS.escape(t)+'"]'))pf.theme=null;
  const th=pf.theme;
  lv1.hidden=th!==null;lv2.hidden=th===null;
- if(th===null){pf.shown=null;const sp=root.querySelector('.strips');sp.classList.remove('leaving');sp.querySelectorAll('.pick').forEach(x=>x.classList.remove('pick'));pf.busy=false;fit();return;}
+ if(th===null){pf.shown=null;const sp=root.querySelector('.strips');if(sp){sp.classList.remove('leaving');sp.querySelectorAll('.pick').forEach(x=>x.classList.remove('pick'));}pf.busy=false;fit();return;}
  const anim=th!==pf.shown;pf.shown=th;
  let n=0;
  root.querySelectorAll('.item').forEach(c=>{const ok=(!th||c.dataset.cat===th)&&(!pf.q||c.dataset.text.includes(pf.q));c.hidden=!ok;if(ok)n++;});
@@ -375,7 +400,7 @@ async function saveEdit(){
  const drive_url=drive_files[0]?drive_files[0].url:''; // 예전 단일 링크 필드와 호환
  const sum=plain(body).slice(0,200)||(old&&old.summary)||'';
  const p=old?Object.assign({},old,{title,category:cat,tags,body_md:body,summary:sum,drive_url,drive_files,updated:now,editable:true})
-  :{id:newId(),kind:'post',title,category:cat,tags,summary:sum,body_md:body,author:'',year:'',added:now,updated:now,drive_url,drive_files,sample:false,editable:true,pinned:false,source:'study-app'};
+  :{id:newId(),kind:'post',title,category:cat,tags,summary:sum,body_md:body,author:'',year:'',added:now,updated:now,drive_url,drive_files,sample:false,editable:true,pinned:false,deleted:false,source:'study-app'};
  const btn=$('#e-save');btn.disabled=true;
  try{
   const merged=await withRemote(rem=>{const i=rem.findIndex(x=>x.id===p.id);if(i>=0)rem[i]=p;else rem.push(p);return rem;},'스터디 저장: '+p.id);
@@ -387,11 +412,33 @@ async function saveEdit(){
 }
 async function togglePin(id){
  if(!getTok()){needToken();return;}
- const p=pf.posts.find(x=>x.id===id);if(!p)return;
+ const p=pf.posts.find(x=>x.id===id);if(!p||isDel(p))return;
  const next=!p.pinned;
  try{
   pf.posts=await withRemote(rem=>{const i=rem.findIndex(x=>x.id===id);if(i>=0)rem[i]=Object.assign({},rem[i],{pinned:next,updated:todayKR()});return rem;},'스터디 즐겨찾기: '+id);
   toast(next?'즐겨찾기에 넣었어요':'즐겨찾기를 해제했어요');
+  refresh();
+ }catch(e){if(!(e&&e.handled))toast(errText(e),true);}
+}
+async function softDelete(id){
+ if(!getTok()){needToken();return;}
+ const p=pf.posts.find(x=>x.id===id);if(!p||isDel(p))return;
+ if(!confirm('이 글을 휴지통으로 옮길까요?'))return;
+ const now=todayKR();
+ try{
+  pf.posts=await withRemote(rem=>{const i=rem.findIndex(x=>x.id===id);if(i>=0)rem[i]=Object.assign({},rem[i],{deleted:true,deleted_at:now,updated:now});return rem;},'스터디 휴지통: '+id);
+  toast('휴지통으로 옮겼어요');
+  pf.editing=null;refresh();
+  setHash(pf.theme!==null?hashTheme(pf.theme):'');
+ }catch(e){if(!(e&&e.handled))toast(errText(e),true);}
+}
+async function restorePost(id){
+ if(!getTok()){needToken();return;}
+ const p=pf.posts.find(x=>x.id===id);if(!p||!isDel(p))return;
+ const now=todayKR();
+ try{
+  pf.posts=await withRemote(rem=>{const i=rem.findIndex(x=>x.id===id);if(i>=0){const n=Object.assign({},rem[i],{deleted:false,updated:now});delete n.deleted_at;rem[i]=n;}return rem;},'스터디 되살리기: '+id);
+  toast('되살렸어요');
   refresh();
  }catch(e){if(!(e&&e.handled))toast(errText(e),true);}
 }
@@ -400,11 +447,16 @@ root.onclick=e=>{
  const act=e.target.closest('[data-act]');
  if(act){
   const it=act.closest('.item'),id=act.dataset.id||(it&&it.dataset.id),p=pf.posts.find(x=>x.id===id);
-  if(act.dataset.act==='edit'&&p)openWrite(p);
+  if(act.dataset.act==='edit'&&p&&!isDel(p))openWrite(p);
   else if(act.dataset.act==='pin')togglePin(id);
+  else if(act.dataset.act==='del')softDelete(id);
+  else if(act.dataset.act==='restore')restorePost(id);
+  else if(act.dataset.act==='trash'){setHash('#trash');scrollTo(0,0);}
   else if(act.dataset.act==='fdel'){const row=act.closest('.efrow');if(row){row.remove();const box=$('#e-flist');if(box&&!box.querySelector('.efrow'))box.innerHTML=fileRowHtml('','');}}
   return;}
  if(e.target.closest('#e-fadd')){addFileRow();return;}
+ if(e.target.closest('#trashbtn')){setHash('#trash');scrollTo(0,0);return;}
+ if(e.target.closest('#tback')){setHash('');scrollTo(0,0);return;}
  if(e.target.closest('#wbtn,#wbtn0')){openWrite(null);return;}
  const s=e.target.closest('.strip,.tab');
  if(s){
