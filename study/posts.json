@@ -16,12 +16,14 @@
       "author": "홍길동",
       "year": 2024,
       "added": "2026-10-28",
-      "updated": "2026-10-28",
+      "updated": "2026-11-06",
       "drive_url": "https://drive.google.com/drive/folders/1qRBl812x8VvEjvnFDu2EnvhVfuV8KeNe",
       "drive_files": [],
       "sample": true,
       "editable": false,
-      "source": "manual"
+      "source": "manual",
+      "deleted": true,
+      "deleted_at": "2026-11-06"
     },
     {
       "id": "notion-a3e82c7e2bef4e2291c54ce009ba130d",
