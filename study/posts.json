@@ -437,23 +437,29 @@
     {
       "id": "post-camera-moving-terms-20261027",
       "kind": "post",
-      "title": "영상 카메라 무빙 용어 20가지",
+      "title": "영상·모션 용어 모음 (카메라 무빙 + 글자 효과)",
       "category": "영상·콘텐츠 제작",
       "tags": [
         "카메라무빙",
-        "영상용어"
+        "영상용어",
+        "글자효과",
+        "모션그래픽"
       ],
-      "summary": "영상 맡길 때 쓰는 카메라 움직임 용어를 짧게 정리한 글. 팬·달리·줌 차이를 움직이는 예시로 볼 수 있어요.",
-      "body_md": "영상 편집·제작을 맡길 때 「화면이 옆으로 쓱 지나가게」처럼 말로만 설명하기보다, 정확한 카메라 무빙 용어로 말하고 싶을 때 참고하려고 모아 둔 글이에요.\n\n예를 들어 **팬**은 카메라 위치는 두고 옆으로 훑기, **달리**는 카메라 자체가 앞뒤로 이동, **줌**은 렌즈로 확대·축소하는 식이에요. 자주 쓰는 움직임 약 20가지를 움직이는 예시와 함께 보여 줍니다.\n\n원문은 Threads [@gitingc](https://www.threads.com/@gitingc) (2026-10-27)에 있어요. 영상 예시는 아래 링크에서 확인해요.\n\n→ [Threads 원문 보기](https://www.threads.com/@gitingc/post/DfBhloCFGnK)\n",
-      "author": "@gitingc (Threads)",
+      "summary": "카메라 무빙 용어와 글자 효과(모션 타이포) 용어를 한곳에 모아 둔 글. 예시는 각 Threads 원문에서 확인해요.",
+      "body_md": "영상·모션 작업을 맡길 때 말로만 설명하기보다, 정확한 용어로 말하고 싶을 때 참고하려고 모아 두었어요.\n\n## 카메라 무빙\n\n「화면이 옆으로 쓱 지나가게」 대신 쓰는 카메라 움직임 용어예요. 예를 들어 **팬**은 카메라 위치는 두고 옆으로 훑기, **달리**는 카메라 자체가 앞뒤로 이동, **줌**은 렌즈로 확대·축소예요. 자주 쓰는 움직임 약 20가지를 움직이는 예시와 함께 볼 수 있어요.\n\n원문: Threads [@gitingcomics](https://www.threads.com/@gitingcomics) (2026-10-27)\n\n## 글자 효과 (모션 타이포그래피)\n\n「글자 멋있게」 대신 쓰는 글자 효과 이름이에요. 확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이고, 이런 식으로 자주 쓰는 용어 8가지를 정리해 두었어요. 움직이는 예시는 원문에서 확인해요.\n\n원문: Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)\n",
+      "author": "@gitingcomics · @bokmanhi (Threads)",
       "year": "2026",
       "added": "2026-11-06",
       "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@gitingc/post/DfBhloCFGnK",
+      "drive_url": "https://www.threads.com/@gitingcomics/post/DfBhloCFGnK",
       "drive_files": [
         {
-          "name": "Threads 원문 (@gitingc, 2026-10-27)",
-          "url": "https://www.threads.com/@gitingc/post/DfBhloCFGnK"
+          "name": "Threads · 카메라 무빙 (@gitingcomics, 2026-10-27)",
+          "url": "https://www.threads.com/@gitingcomics/post/DfBhloCFGnK"
+        },
+        {
+          "name": "Threads · 글자 효과 (@bokmanhi, 2026-10-24)",
+          "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
         }
       ],
       "sample": false,
@@ -487,8 +493,9 @@
       "sample": false,
       "editable": true,
       "pinned": false,
-      "deleted": false,
-      "source": "manual"
+      "deleted": true,
+      "source": "manual",
+      "deleted_at": "2026-11-06"
     },
     {
       "id": "post-halftone-interactive-poster-20261027",
@@ -530,16 +537,16 @@
         "모션"
       ],
       "summary": "처음부터 끝까지 같은 속도로 움직이면 로봇처럼 싸 보일 수 있어요. 속도 변화(이징)는 원문 영상에서 확인해요.",
-      "body_md": "AI가 만든 애니메이션이 **처음부터 끝까지 같은 속도**로만 움직이면, 로봇처럼 어색하고 싸 보일 수 있다는 이야기예요.\n\n움직임에 **속도 변화(이징)** 를 주면 훨씬 자연스러워져요. 구체적인 연출은 원문 영상 예시에서 확인하는 게 좋아요.\n\n원문은 Threads [@gitingc](https://www.threads.com/@gitingc)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@gitingc/post/DfW-0nQBI9S)\n",
-      "author": "@gitingc (Threads)",
+      "body_md": "AI가 만든 애니메이션이 **처음부터 끝까지 같은 속도**로만 움직이면, 로봇처럼 어색하고 싸 보일 수 있다는 이야기예요.\n\n움직임에 **속도 변화(이징)** 를 주면 훨씬 자연스러워져요. 구체적인 연출은 원문 영상 예시에서 확인하는 게 좋아요.\n\n원문은 Threads [@gitingcomics](https://www.threads.com/@gitingcomics)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@gitingcomics/post/DfW-0nQBI9S)\n",
+      "author": "@gitingcomics (Threads)",
       "year": "",
       "added": "2026-11-06",
       "updated": "2026-11-06",
-      "drive_url": "https://www.threads.com/@gitingc/post/DfW-0nQBI9S",
+      "drive_url": "https://www.threads.com/@gitingcomics/post/DfW-0nQBI9S",
       "drive_files": [
         {
-          "name": "Threads 원문 (@gitingc)",
-          "url": "https://www.threads.com/@gitingc/post/DfW-0nQBI9S"
+          "name": "Threads 원문 (@gitingcomics)",
+          "url": "https://www.threads.com/@gitingcomics/post/DfW-0nQBI9S"
         }
       ],
       "sample": false,
