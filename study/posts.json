@@ -539,8 +539,9 @@
       "sample": false,
       "editable": true,
       "pinned": false,
-      "deleted": false,
-      "source": "manual"
+      "deleted": true,
+      "source": "manual",
+      "deleted_at": "2026-11-06"
     }
   ]
 }
