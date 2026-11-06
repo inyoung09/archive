@@ -131,23 +131,32 @@
     {
       "id": "notion-3d8e42f5a2104ba490d672d418e86193",
       "kind": "paper",
-      "title": "어린이놀이시설 안전기준 가이드_확인용",
+      "title": "행안부 어린이놀이시설 안전기준 가이드",
       "category": "공간·디자인",
       "tags": [
         "행정",
         "어린이놀이시설",
         "유니버셜 디자인"
       ],
-      "summary": "어린이놀이시설이 지켜야 할 안전 기준을 설명한 행정안전부 가이드예요.",
-      "body_md": "",
+      "summary": "해설서(2006) · 안전관리 매뉴얼 (2025)",
+      "body_md": "![](study/img/20261106-143455-npyz7p.webp)\n\n- 해설서(2006)\n\n![](study/img/20261106-143430-8yjsnb.webp)\n\n- 안전관리 매뉴얼 (2025)",
       "author": "행정안전부",
       "year": 2020,
       "added": "2026-10-28",
-      "updated": "2026-10-28",
+      "updated": "2026-11-06",
       "drive_url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view",
-      "drive_files": [],
+      "drive_files": [
+        {
+          "name": "어린이놀이시설 안전기준 가이드 (06\")",
+          "url": "https://drive.google.com/file/d/1MXk_7JEXD8_LBWFhykWeNragHrbXS-hf/view"
+        },
+        {
+          "name": "어린이놀이시설 안전관리 매뉴얼(25.3월 개정판)",
+          "url": "https://drive.google.com/file/d/1P7EBhtC5OhrRblI3Q1hFFJHVsTN2BecI/view?usp=sharing"
+        }
+      ],
       "sample": false,
-      "editable": false,
+      "editable": true,
       "source": "notion"
     },
     {
