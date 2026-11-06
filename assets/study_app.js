@@ -212,11 +212,22 @@ function l2(){
   +'<div class="tabbar" id="ptabs" role="tablist"><button type="button" class="tab on" data-theme="">전체</button>'+gs.map(g=>'<button type="button" class="tab" data-theme="'+esc(g.name)+'">'+esc(g.name)+'</button>').join('')+'</div>'
   +'<p class="pcount" id="pcount"></p><div class="items" id="plist">'+items.join('')+'</div><div class="none" id="pnone">검색 결과가 없어요.</div></div>';
 }
+function fileHref(u){const s=safeUrl(u);return s&&/^https?:\/\//i.test(s)?s:null;}
+function fileListOf(p){
+ const out=[],seen=new Set();
+ for(const f of (p.drive_files||[])){
+  const u=fileHref(f.url);if(!u||seen.has(u))continue;seen.add(u);
+  out.push({name:(f.name||'').trim()||'파일',url:u});
+ }
+ const u=fileHref(p.drive_url);
+ if(u&&!seen.has(u))out.push({name:'원문 PDF',url:u});
+ return out;
+}
 function pdfBlock(p){
- const files=(p.drive_files||[]).map(f=>({name:f.name||'PDF',url:driveUrl(f.url)})).filter(f=>f.url);
- if(files.length)return '<p class="by">원문 PDF (Google Drive · 인영 계정으로만 열려요)</p><ul class="pdfs">'+files.map(f=>'<li><a href="'+esc(f.url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.name)+'</a></li>').join('')+'</ul>';
- const u=driveUrl(p.drive_url);
- return u?'<p><a class="pdfl" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">원문 PDF 보기</a></p>':'';
+ const files=fileListOf(p);
+ if(!files.length)return '';
+ const note=files.some(f=>/^https:\/\/(drive|docs)\.google\.com\//i.test(f.url))?' · Drive 링크는 인영 계정으로만 열려요':'';
+ return '<div class="files"><p class="by">관련 파일 <span class="fn">('+files.length+')'+note+'</span></p><ul class="pdfs">'+files.map(f=>'<li><a href="'+esc(f.url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.name)+'</a></li>').join('')+'</ul></div>';
 }
 function reader(p){
  const body=(p.body_md||'').trim();
@@ -236,13 +247,45 @@ function editorHtml(p){
   +'<input type="text" id="e-title" placeholder="제목" aria-label="제목" maxlength="200" value="'+esc(p?p.title:'')+'">'
   +'<div class="erow"><input type="text" id="e-cat" list="e-cats" placeholder="분류 (목록에서 고르거나 새로 입력)" aria-label="분류" value="'+esc(p?catOf(p):'')+'" autocomplete="off"><datalist id="e-cats">'+cats.map(c=>'<option value="'+esc(c)+'">').join('')+'</datalist>'
   +'<input type="text" id="e-tags" placeholder="태그 (쉼표로 구분)" aria-label="태그" value="'+esc(p?(p.tags||[]).join(', '):'')+'"></div>'
-  +'<input type="url" id="e-drive" placeholder="관련 링크 (Google Drive 등, 선택)" aria-label="관련 링크" value="'+esc(p&&p.drive_url?p.drive_url:'')+'">'
+  +'<div class="efiles" id="e-files"><div class="efh"><span>관련 파일 (이름 + Drive 링크)</span><button type="button" class="btn sm ghost" id="e-fadd">+ 파일 추가</button></div><div class="eflist" id="e-flist"></div><p class="imgst">링크만 넣어요. 파일 자체는 Drive에 두고, 여기서는 주소만 붙여넣으면 돼요.</p></div>'
   +'<div class="row"><button class="btn sm ghost" id="e-img" type="button">🖼 이미지 추가</button><input type="file" id="e-file" accept="image/*" multiple hidden><span class="imgst" id="e-imgst" role="status" aria-live="polite"></span><span class="imgst">붙여넣기·끌어다 놓기도 돼요</span></div>'
   +'<div class="panes"><textarea id="e-body" placeholder="본문 (마크다운)" aria-label="본문"></textarea><div class="pane-prev md" id="e-prev" aria-label="미리보기"></div></div>'
   +'<div class="err" id="e-err" role="alert"></div>'
   +'<div class="row"><button class="btn" id="e-save" type="button">저장</button><button class="btn ghost" id="e-cancel" type="button">취소</button></div></div>';
 }
 function updPrev(){const b=$('#e-body'),p=$('#e-prev');if(b&&p)p.innerHTML=md(b.value);}
+function fileRowHtml(name,url){
+ return '<div class="efrow"><input type="text" class="ef-name" placeholder="파일 이름" aria-label="파일 이름" value="'+esc(name||'')+'"><input type="url" class="ef-url" placeholder="https://drive.google.com/…" aria-label="파일 링크" value="'+esc(url||'')+'"><button type="button" class="btn sm ghost ef-del" data-act="fdel" title="이 파일 빼기" aria-label="이 파일 빼기">삭제</button></div>';
+}
+function fillFileRows(p){
+ const box=$('#e-flist');if(!box)return;
+ const rows=[];
+ if(p){
+  for(const f of (p.drive_files||[])){if(f&&(f.url||f.name))rows.push(fileRowHtml(f.name||'',f.url||''));}
+  if(!rows.length&&p.drive_url)rows.push(fileRowHtml('원문 PDF',p.drive_url));
+ }
+ if(!rows.length)rows.push(fileRowHtml('',''));
+ box.innerHTML=rows.join('');
+}
+function readFileRows(){
+ const out=[],seen=new Set();
+ document.querySelectorAll('#e-flist .efrow').forEach(row=>{
+  const name=(row.querySelector('.ef-name')?.value||'').trim();
+  const url=(row.querySelector('.ef-url')?.value||'').trim();
+  if(!url&&!name)return;
+  if(!url)return; // 링크 없는 행은 무시
+  const safe=fileHref(url);
+  if(!safe){out.push({bad:true,name,url});return;}
+  if(seen.has(safe))return;seen.add(safe);
+  out.push({name:name||'파일',url:safe});
+ });
+ return out;
+}
+function addFileRow(){
+ const box=$('#e-flist');if(!box)return;
+ box.insertAdjacentHTML('beforeend',fileRowHtml('',''));
+ const last=box.querySelector('.efrow:last-child .ef-url');if(last)last.focus();
+}
 // ---------- navigation ----------
 function route(){
  const h=location.hash;
@@ -306,6 +349,7 @@ function openWrite(p){
  const ed=$('#ed');ed.innerHTML=editorHtml(p);
  // 본문이 비어 있으면(논문 요약만 있는 경우) 요약으로 채워 수정할 수 있게
  $('#e-body').value=p?(p.body_md||p.summary||''):'';
+ fillFileRows(p);
  updPrev();render();scrollTo(0,0);$('#e-title').focus();
 }
 function closeEdit(){pf.editing=null;render();}
@@ -315,10 +359,14 @@ async function saveEdit(){
  const cat=$('#e-cat').value.trim();
  if(!cat){$('#e-err').textContent='분류를 입력하거나 골라 주세요.';return;}
  const tags=[...new Set($('#e-tags').value.split(/[,，]/).map(t=>t.trim().replace(/^#/,'')).filter(Boolean))];
- const body=$('#e-body').value,drive=($('#e-drive')&&$('#e-drive').value||'').trim(),now=todayKR(),old=pf.editing&&pf.editing.id?pf.editing:null;
+ const body=$('#e-body').value,now=todayKR(),old=pf.editing&&pf.editing.id?pf.editing:null;
+ const rawFiles=readFileRows();
+ if(rawFiles.some(f=>f.bad)){$('#e-err').textContent='관련 파일 링크는 http(s) 주소여야 해요.';return;}
+ const drive_files=rawFiles.map(({name,url})=>({name,url}));
+ const drive_url=drive_files[0]?drive_files[0].url:''; // 예전 단일 링크 필드와 호환
  const sum=plain(body).slice(0,200)||(old&&old.summary)||'';
- const p=old?Object.assign({},old,{title,category:cat,tags,body_md:body,summary:sum,drive_url:drive,updated:now,editable:true})
-  :{id:newId(),kind:'post',title,category:cat,tags,summary:sum,body_md:body,author:'',year:'',added:now,updated:now,drive_url:drive,drive_files:[],sample:false,editable:true,pinned:false,source:'study-app'};
+ const p=old?Object.assign({},old,{title,category:cat,tags,body_md:body,summary:sum,drive_url,drive_files,updated:now,editable:true})
+  :{id:newId(),kind:'post',title,category:cat,tags,summary:sum,body_md:body,author:'',year:'',added:now,updated:now,drive_url,drive_files,sample:false,editable:true,pinned:false,source:'study-app'};
  const btn=$('#e-save');btn.disabled=true;
  try{
   const merged=await withRemote(rem=>{const i=rem.findIndex(x=>x.id===p.id);if(i>=0)rem[i]=p;else rem.push(p);return rem;},'스터디 저장: '+p.id);
@@ -345,7 +393,9 @@ root.onclick=e=>{
   const it=act.closest('.item'),id=act.dataset.id||(it&&it.dataset.id),p=pf.posts.find(x=>x.id===id);
   if(act.dataset.act==='edit'&&p)openWrite(p);
   else if(act.dataset.act==='pin')togglePin(id);
+  else if(act.dataset.act==='fdel'){const row=act.closest('.efrow');if(row){row.remove();const box=$('#e-flist');if(box&&!box.querySelector('.efrow'))box.innerHTML=fileRowHtml('','');}}
   return;}
+ if(e.target.closest('#e-fadd')){addFileRow();return;}
  if(e.target.closest('#wbtn,#wbtn0')){openWrite(null);return;}
  const s=e.target.closest('.strip,.tab');
  if(s){
