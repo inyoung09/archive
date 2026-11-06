@@ -543,6 +543,54 @@
       "deleted": true,
       "source": "manual",
       "deleted_at": "2026-11-06"
+    },
+    {
+      "id": "drive-1jT3gNTRdrNRRmJrYnd63_lGUMickARFb",
+      "kind": "paper",
+      "title": "서울시 유니버설디자인 적용지침(2022)",
+      "category": "공간·디자인",
+      "tags": [
+        "유니버설디자인",
+        "서울시",
+        "공공공간"
+      ],
+      "summary": "서울시가 보도·공원·공공건축물·공중화장실·공공주택에 적용하는 유니버설디자인 세부 지침이다. 2017년 통합 가이드라인을 고도화해 접근성·편리성·안전성 기준으로 공간별 계획 요점을 제시한다.",
+      "body_md": "",
+      "author": "서울특별시",
+      "year": 2022,
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://drive.google.com/file/d/1jT3gNTRdrNRRmJrYnd63_lGUMickARFb/view",
+      "drive_files": [],
+      "sample": false,
+      "editable": false,
+      "pinned": false,
+      "deleted": false,
+      "source": "drive"
+    },
+    {
+      "id": "drive-1P7EBhtC5OhrRblI3Q1hFFJHVsTN2BecI",
+      "kind": "paper",
+      "title": "어린이놀이시설 안전관리 매뉴얼",
+      "category": "공간·디자인",
+      "tags": [
+        "어린이놀이시설",
+        "안전관리",
+        "행정안전부"
+      ],
+      "summary": "행정안전부가 2025년 3월 발행한 어린이놀이시설 안전관리 실무 매뉴얼이다. 관련 법령, 설치·등록·안전검사, 유지관리, 안전요원·보험, 중대사고 대응과 FAQ를 담았다.",
+      "body_md": "",
+      "author": "행정안전부",
+      "year": 2025,
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://drive.google.com/file/d/1P7EBhtC5OhrRblI3Q1hFFJHVsTN2BecI/view",
+      "drive_files": [],
+      "sample": false,
+      "editable": false,
+      "pinned": false,
+      "deleted": false,
+      "source": "drive"
     }
   ]
 }
