@@ -433,6 +433,34 @@
       "drive_url": "",
       "source": "notes-migrate",
       "editable": true
+    },
+    {
+      "id": "post-camera-moving-terms-20261027",
+      "kind": "post",
+      "title": "영상 카메라 무빙 용어 20가지",
+      "category": "영상·콘텐츠 제작",
+      "tags": [
+        "카메라무빙",
+        "영상용어"
+      ],
+      "summary": "영상 맡길 때 쓰는 카메라 움직임 용어를 짧게 정리한 글. 팬·달리·줌 차이를 움직이는 예시로 볼 수 있어요.",
+      "body_md": "영상 편집·제작을 맡길 때 「화면이 옆으로 쓱 지나가게」처럼 말로만 설명하기보다, 정확한 카메라 무빙 용어로 말하고 싶을 때 참고하려고 모아 둔 글이에요.\n\n예를 들어 **팬**은 카메라 위치는 두고 옆으로 훑기, **달리**는 카메라 자체가 앞뒤로 이동, **줌**은 렌즈로 확대·축소하는 식이에요. 자주 쓰는 움직임 약 20가지를 움직이는 예시와 함께 보여 줍니다.\n\n원문은 Threads [@gitingc](https://www.threads.com/@gitingc) (2026-10-27)에 있어요. 영상 예시는 아래 링크에서 확인해요.\n\n→ [Threads 원문 보기](https://www.threads.com/@gitingc/post/DfBhloCFGnK)\n",
+      "author": "@gitingc (Threads)",
+      "year": "2026",
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://www.threads.com/@gitingc/post/DfBhloCFGnK",
+      "drive_files": [
+        {
+          "name": "Threads 원문 (@gitingc, 2026-10-27)",
+          "url": "https://www.threads.com/@gitingc/post/DfBhloCFGnK"
+        }
+      ],
+      "sample": false,
+      "editable": true,
+      "pinned": false,
+      "deleted": false,
+      "source": "manual"
     }
   ]
 }
