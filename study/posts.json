@@ -159,16 +159,21 @@
         "어린이놀이시설",
         "유니버셜 디자인"
       ],
-      "summary": "장애 여부와 관계없이 함께 놀 수 있는 실내놀이터를 만드는 방법을 담은 매뉴얼이에요.",
-      "body_md": "",
+      "summary": "목차 · Chapter 1 머리말",
+      "body_md": "\n![](study/img/20261106-142322-o8sqct.webp)\n\n목차\n\n\n\nChapter 1 머리말\n\n   1.1 매뉴얼의 목적\n\n   1.2 매뉴얼의 활용방법\n\n\n\nChapter 2 무장애 실내놀이터의 이해\n\n   2.1 무장애 실내놀이터의 개념\n\n   2.2 무장애 실내놀이터의 원칙\n\n   2.3 무장애 실내놀이터의 범위\n\n\n\nChapter 3 아동과 놀이활동\n\n   3.1 놀이의 특성\n\n   3.2 놀이 유형\n\n   3.3 장애 및 비장애아동의 신체 활동 범위\n\n\n\nChapter 4 무장애 실내놀이터 설계\n\n   4.1 관련법규\n\n   4.2 항목별 설계 기준\n\n\n\nChapter 5 무장애 실내놀이터 운영\n\n   5.1 무장애 실내놀이터 운영 가이드\n\n\n\n부록\n\n1. 실내놀이터 배리어프리 인증 기준 가이드\n\n2. 포커스그룹 인터뷰\n\n3. 실내놀이터 이용자 설문조사\n\n4. 실내놀이터 사례조사\n\n\n▼원본 파일 다운로드\nhttps://www.accessrights.or.kr/boards/466/view?referer=%2Fpages%2Fbooks",
       "author": "(사)장애물없는생활환경시민연대",
       "year": 2023,
       "added": "2026-10-28",
-      "updated": "2026-10-28",
+      "updated": "2026-11-06",
       "drive_url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view",
-      "drive_files": [],
+      "drive_files": [
+        {
+          "name": "원문 PDF",
+          "url": "https://drive.google.com/file/d/1HpDv22ib8BrMfE4iwG3oDTGnx_geFwJ2/view"
+        }
+      ],
       "sample": false,
-      "editable": false,
+      "editable": true,
       "source": "notion"
     },
     {
