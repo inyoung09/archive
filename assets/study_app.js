@@ -20,7 +20,7 @@ function emph(t){
 function inline(t){ // t is already HTML-escaped
  const ph=[];const hold=h=>{ph.push(h);return '\u0000'+(ph.length-1)+'\u0000';};
  t=t.replace(/`([^`]+)`/g,(m,c)=>hold('<code>'+c+'</code>'));
- t=t.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;[^)]*?&quot;)?\)/g,(m,alt,u)=>{const s=imgUrl(u);return hold(s?'<a class="mdimg" href="'+s+'" target="_blank" rel="noopener noreferrer"><img src="'+s+'" alt="'+alt+'" loading="lazy" referrerpolicy="no-referrer"></a>':alt);});
+ t=t.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;([^)]*?)&quot;)?\)/g,(m,alt,u,ti)=>{const s=imgUrl(u);const w=/^\s*(\d{1,3})\s*%?\s*$/.exec(ti||'');const st=w&&+w[1]>=5&&+w[1]<=100?' style="width:'+(+w[1])+'%"':'';return hold(s?'<a class="mdimg" href="'+s+'" target="_blank" rel="noopener noreferrer"><img src="'+s+'" alt="'+alt+'"'+st+' loading="lazy" referrerpolicy="no-referrer"></a>':alt);});
  t=t.replace(/\[([^\]]+)\]\(([^)\s]+)(?:\s+&quot;[^)]*?&quot;)?\)/g,(m,l,u)=>{const s=safeUrl(u);return hold(s?'<a href="'+s+'" target="_blank" rel="noopener noreferrer">'+emph(l)+'</a>':emph(l));});
  t=t.replace(/(^|[\s(])(https?:\/\/[^\s<]+)/g,(m,p,u)=>{const tail=(/[.,;:!?)]+$/.exec(u)||[''])[0];const core=u.slice(0,u.length-tail.length);return p+hold('<a href="'+core+'" target="_blank" rel="noopener noreferrer">'+core+'</a>')+tail;});
  t=emph(t);
