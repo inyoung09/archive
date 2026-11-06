@@ -461,6 +461,63 @@
       "pinned": false,
       "deleted": false,
       "source": "manual"
+    },
+    {
+      "id": "post-motion-type-terms-20261024",
+      "kind": "post",
+      "title": "글자 효과(모션 타이포그래피) 용어 8가지",
+      "category": "영상·콘텐츠 제작",
+      "tags": [
+        "글자효과",
+        "모션그래픽"
+      ],
+      "summary": "「글자 멋있게」 대신 정확한 효과 이름으로 요청하려고 모아 둔 글자 효과 용어 글이에요.",
+      "body_md": "모션 그래픽·영상에서 글자 연출을 맡길 때 「글자 멋있게」라고만 말하기보다, 효과 이름을 정확히 말하고 싶을 때 참고하는 글이에요.\n\n확인된 예시는 **타이핑 효과**, **마스크 리빌**, **형광펜 효과** 등이에요. 글에서는 이런 식으로 자주 쓰는 글자 효과 용어 8가지를 정리해 두었고, 움직이는 예시는 원문에서 볼 수 있어요.\n\n원문은 Threads [@bokmanhi](https://www.threads.com/@bokmanhi) (2026-10-24)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@bokmanhi/post/De5NQAGCHd2)\n",
+      "author": "@bokmanhi (Threads)",
+      "year": "2026",
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2",
+      "drive_files": [
+        {
+          "name": "Threads 원문 (@bokmanhi, 2026-10-24)",
+          "url": "https://www.threads.com/@bokmanhi/post/De5NQAGCHd2"
+        }
+      ],
+      "sample": false,
+      "editable": true,
+      "pinned": false,
+      "deleted": false,
+      "source": "manual"
+    },
+    {
+      "id": "post-halftone-interactive-poster-20261027",
+      "kind": "post",
+      "title": "GPT로 만든 하프톤 인터랙티브 포스터",
+      "category": "영상·콘텐츠 제작",
+      "tags": [
+        "인터랙티브",
+        "하프톤",
+        "AI그래픽"
+      ],
+      "summary": "GPT(Astra)로 만든 하프톤(망점) 스타일 인터랙티브 포스터 예시. 그래픽·연출 아이디어 참고용.",
+      "body_md": "GPT(Astra)로 만든 **하프톤(망점)** 스타일 인터랙티브 포스터 예시예요. 그래픽·인터랙티브 연출 아이디어를 찾을 때 참고용으로 남겨 두었어요.\n\n자세한 움직임·이미지는 원문에서 확인해요.\n\n원문은 Threads [@nono_ai_archive](https://www.threads.com/@nono_ai_archive) (2026-10-27)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq)\n",
+      "author": "@nono_ai_archive (Threads)",
+      "year": "2026",
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq",
+      "drive_files": [
+        {
+          "name": "Threads 원문 (@nono_ai_archive, 2026-10-27)",
+          "url": "https://www.threads.com/@nono_ai_archive/post/De_ikZ2gusq"
+        }
+      ],
+      "sample": false,
+      "editable": true,
+      "pinned": false,
+      "deleted": false,
+      "source": "manual"
     }
   ]
 }
