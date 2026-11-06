@@ -518,6 +518,35 @@
       "pinned": false,
       "deleted": false,
       "source": "manual"
+    },
+    {
+      "id": "post-animation-easing-gitingc",
+      "kind": "post",
+      "title": "애니메이션이 싸 보이는 이유: 속도 변화(이징)",
+      "category": "영상·콘텐츠 제작",
+      "tags": [
+        "애니메이션",
+        "이징",
+        "모션"
+      ],
+      "summary": "처음부터 끝까지 같은 속도로 움직이면 로봇처럼 싸 보일 수 있어요. 속도 변화(이징)는 원문 영상에서 확인해요.",
+      "body_md": "AI가 만든 애니메이션이 **처음부터 끝까지 같은 속도**로만 움직이면, 로봇처럼 어색하고 싸 보일 수 있다는 이야기예요.\n\n움직임에 **속도 변화(이징)** 를 주면 훨씬 자연스러워져요. 구체적인 연출은 원문 영상 예시에서 확인하는 게 좋아요.\n\n원문은 Threads [@gitingc](https://www.threads.com/@gitingc)예요.\n\n→ [Threads 원문 보기](https://www.threads.com/@gitingc/post/DfW-0nQBI9S)\n",
+      "author": "@gitingc (Threads)",
+      "year": "",
+      "added": "2026-11-06",
+      "updated": "2026-11-06",
+      "drive_url": "https://www.threads.com/@gitingc/post/DfW-0nQBI9S",
+      "drive_files": [
+        {
+          "name": "Threads 원문 (@gitingc)",
+          "url": "https://www.threads.com/@gitingc/post/DfW-0nQBI9S"
+        }
+      ],
+      "sample": false,
+      "editable": true,
+      "pinned": false,
+      "deleted": false,
+      "source": "manual"
     }
   ]
 }
