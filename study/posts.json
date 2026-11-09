@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "posts": [
     {
       "id": "sample-paper",
@@ -591,6 +591,32 @@
       "pinned": false,
       "deleted": false,
       "source": "drive"
+    },
+    {
+      "id": "post-visual-style-book-eccl-20261109",
+      "kind": "post",
+      "title": "비주얼 스타일 이름 찾기 (Visual Style Book I · ECCL Studio)",
+      "category": "공간·디자인",
+      "tags": [
+        "비주얼스타일",
+        "디자인레퍼런스",
+        "그래픽디자인",
+        "검색키워드",
+        "무드보드"
+      ],
+      "summary": "취향 이미지를 검색어로 바꾸는 56가지 비주얼 스타일 가이드. 공개 확인분(01장 10개)의 이름·특징·검색어와 원문·핀터레스트 링크.",
+      "body_md": "취향으로 모아둔 이미지는 많은데, 「비슷한 분위기」를 다시 찾으려면 검색어가 막힐 때가 많아요. ECCL Studio의 Visual Style Book I은 **56가지 비주얼 스타일**의 이름·특징·검색 키워드를 모아 둔 가이드예요. 전시기획에서 그래픽·공간·오브제 레퍼런스를 찾을 때 「느낌」을 말로 바꾸기 좋아요.\n\n# 이 가이드를 보는 법\n- 마음에 드는 이름부터 가볍게 읽기\n- 설명으로 이미지를 떠올린 뒤, 관찰 포인트(「이렇게 보면 더 쉬워요」) 확인\n- 검색어를 복사해 레퍼런스 찾기\n- **실제 제작 기법**인지, **그 느낌을 디지털로 재현한 표현**인지도 함께 보기\n- 한 작품에 여러 스타일이 겹칠 수 있어요. 정답 나누기보다 취향을 설명하는 단어를 늘린다고 생각하면 좋아요.\n\n# 확인한 분류 (원문 기준)\n원문 가이드는 여러 장으로 나뉘어 있어요. 공개로 확인한 범위는 아래예요.\n- **01. 시대와 문화에서 나온 미학 · 10개** → 이름·특징·검색어까지 확인\n- **02. 디지털 문화·3D·이미지 변형 · 13개** → 장 제목·개수만 확인, 개별 스타일 목록은 이 정리에서 미확인\n- **나머지(전체 56개 중 11~56)** → 이 정리에서 미확인 (원문·핀터레스트에서 이어서 보면 좋아요)\n\n# 01. 시대·문화 미학 10개 (확인분)\n전시기획에서 「이 분위기」를 말할 때 바로 쓰기 좋은 이름이에요. 특징은 짧게, 검색어는 원문 그대로예요.\n\n1. **Gen X Soft Club (젠 엑스 소프트 클럽)** · 문화 미학  \n   도시 사진 + 회색·베이지·탁한 녹색 + 담백한 산세리프. 차갑지만 편안한 일상 속 미래.  \n   검색: `Gen X Soft Club graphic design` · `Gen X Soft Club editorial`\n\n2. **Frasurbane (프래서베인)** · 문화 미학  \n   세리프·이탤릭, 세피아 사진, 지구본·천문도·고전 도해. 지적인 취향·여유로운 생활감.  \n   검색: `Frasurbane graphic design` · `90s urbane advertising`\n\n3. **Global Village Coffeehouse (글로벌 빌리지 커피하우스)** · 문화 미학  \n   흙빛, 거친 판화 선, 손그림·상징 모티프. 90년대 커피하우스의 따뜻한 손길.  \n   검색: `Global Village Coffeehouse graphic design` · `90s coffee packaging`\n\n4. **Whimsigothic (윔지고딕)** · 문화 미학  \n   고딕 장식 + 달·별·태양 + 장난스러운 곡선. 무섭기보다 동화·마법 공간.  \n   검색: `Whimsigothic graphic design` · `Whimsigoth celestial`\n\n5. **Frutiger Aero (프루티거 에어로)** · 문화 미학  \n   푸른 하늘·잔디·물방울 + 유리 버튼·광택 입체 UI. 맑고 낙관적인 2000년대 디지털.  \n   검색: `Frutiger Aero graphic design` · `Frutiger Aero interface`\n\n6. **Y2K Futurism / Y2K Aesthetic (와이투케이 퓨처리즘)** · 문화 미학  \n   은색 금속, 반투명 플라스틱, 둥근 기기, 입체 글자. (가이드는 패션보다 기기·디지털 그래픽 쪽)  \n   검색: `Y2K futurism graphic design` · `Y2K chrome typography`\n\n7. **Corporate Grunge (코퍼레이트 그런지)** · 문화 미학  \n   긁힌 사진, 닳은 글자, 어긋난 인쇄를 광고·패키지에. 거친 개성.  \n   검색: `Corporate Grunge advertising` · `90s grunge packaging`\n\n8. **Pacific Punk Wave (퍼시픽 펑크 웨이브)** · 문화 미학  \n   기울어진 글자, 비대칭, 강한 색면·기하. 펑크·뉴웨이브·급진 디자인이 부딪히는 리듬.  \n   검색: `Pacific Punk Wave graphic design` · `Pacific Punk Wave poster`\n\n9. **Angelcore (엔젤코어)** · 온라인 미학  \n   날개·후광·구름·흰 깃털 + 파스텔·빛 번짐. 천상의 밝음.  \n   검색: `Angelcore aesthetic` · `Angelcore graphic design`\n\n10. **Vaporwave (베이퍼웨이브)** · 온라인·음악 미학  \n    고전 조각 + 옛 컴퓨터 창 + 격자·초기 3D, 핑크·청록 콜라주. 디지털 향수.  \n    검색: `Vaporwave graphic design` · `Vaporwave collage`\n\n# 전시기획에 쓰는 팁\n- 레퍼런스 보드·무드보드 만들 때 **스타일 이름 + 검색어**를 같이 적어두면, 나중에 「그 느낌」을 다시 찾기 쉬워요.\n- 쇼케이스 「영감」 분류(그래픽 / 제품·오브제 / 인터랙션 / 공간·건축)와도 잘 맞춰 쓸 수 있어요.\n- 개별 이미지보다 **구성·편집·모티프 조합**을 보는 관찰 포인트가 원문에 강조돼 있어요.\n\n# 출처\n- 가이드(원문): [Visual Style Book I · ECCL Studio](https://app.notion.com/p/Visual-Style-Book-I-ECCL-Studio-40ba34c7cd9a80eeac9fd824c47ed876)\n- 이미지 아카이브(Pinterest): https://pin.it/4bxZXcsyg\n- 소개 릴스: Instagram [@ccconji](https://www.instagram.com/reel/DfRnpUno6to/)\n- 정리 범위: 공개로 확인한 인트로·보는 법·01장 10개. 02장 이후 개별 항목은 원문에서 확인.\n",
+      "author": "ECCL Studio · @ccconji",
+      "year": "2026",
+      "added": "2026-11-09",
+      "updated": "2026-11-09",
+      "drive_url": "",
+      "drive_files": [],
+      "sample": false,
+      "editable": true,
+      "pinned": false,
+      "deleted": false,
+      "source": "manual"
     }
   ]
 }
