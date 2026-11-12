@@ -82,6 +82,14 @@ const ghH=(tok,extra)=>Object.assign({'Accept':'application/vnd.github+json'},to
 let toastT;function toast(m,err){const t=$('#toast');t.textContent=m;t.className='toast show'+(err?' bad':'');clearTimeout(toastT);toastT=setTimeout(()=>t.className='toast',err?5000:3500);}
 const plain=t=>String(t||'').replace(/```[\s\S]*?```/g,' ').replace(/^_\(이미지[^\n]*$/gm,'').replace(/!\[[^\]]*\]\([^)]*\)/g,'').replace(/\[([^\]]*)\]\([^)]*\)/g,'$1').replace(/^[#>\-*+\s|:]+/gm,'').replace(/[*_`~]/g,'').split('\n').map(x=>x.trim()).filter(Boolean).slice(0,2).join(' · ');
 const blurb=p=>{const t=p.kind==='paper'&&p.summary?p.summary:plain(p.body_md)||plain(p.summary);return t.length>150?t.slice(0,150)+'…':t;};
+function firstImg(p){
+  const m=/!\[[^\]]*\]\((study\/img\/[^)\s]+)(?:\s+(?:"[^"]*"|'[^']*'))?\)/.exec(String((p&&p.body_md)||''));
+  return m?(imgUrl(m[1])||''):'';
+}
+function thumbH(p){
+  const src=firstImg(p);
+  return '<div class="ithumb" aria-hidden="true">'+(src?'<img src="'+esc(src)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':'')+'</div>';
+}
 const driveUrl=u=>{const s=safeUrl(u);return s&&/^https:\/\/(drive|docs)\.google\.com\//i.test(s)?s:null;};
 // ---------- state ----------
 const CFG=JSON.parse($('#cfg').textContent);
@@ -209,12 +217,17 @@ function l2(){
  const items=gs.flatMap(g=>g.list.map(p=>{
   const text=[p.title,p.author,p.summary,(p.tags||[]).join(' '),p.body_md].join(' ').toLowerCase();
   const sm=blurb(p);
+  const line=sm||byLine(p);
   const star=p.pinned
     ?(getTok()?'<button type="button" class="pin on" data-act="pin" title="즐겨찾기 해제" aria-label="즐겨찾기 해제" aria-pressed="true">★</button>':'<span class="pin on" title="즐겨찾기" aria-label="즐겨찾기">★</span>')
     :(getTok()?'<button type="button" class="pin" data-act="pin" title="즐겨찾기" aria-label="즐겨찾기" aria-pressed="false">☆</button>':'');
-  return '<article class="item" data-id="'+esc(p.id)+'" data-cat="'+esc(g.name)+'" data-text="'+esc(text)+'"><div class="ih"><h3 tabindex="0" role="link">'+esc(p.title)+(p.sample?' <span class="badge">예시</span>':'')+'<span class="kind">'+(KIND[p.kind]||'글')+'</span></h3>'+star+'</div>'
-   +(sm?'<p class="sum">'+esc(sm)+'</p>':'')+'<div class="imeta">'+(byLine(p)?'<span class="by">'+esc(byLine(p))+'</span>':'<span></span>')+((p.tags||[]).length?'<span class="tags">'+tagsH(p.tags)+'</span>':'')+'</div>'
-   +(getTok()?'<div class="acts"><button type="button" data-act="edit">수정</button><button type="button" data-act="del">삭제</button></div>':'')+'</article>';}));
+  return '<article class="item" data-id="'+esc(p.id)+'" data-cat="'+esc(g.name)+'" data-text="'+esc(text)+'">'
+   +thumbH(p)
+   +'<div class="ibody"><p class="icat">'+esc(g.name)+(KIND[p.kind]?' <span class="kind">'+(KIND[p.kind]||'글')+'</span>':'')+'</p>'
+   +'<div class="ih"><h3 tabindex="0" role="link">'+esc(p.title)+(p.sample?' <span class="badge">예시</span>':'')+'</h3>'+star+'</div>'
+   +(line?'<p class="sum">'+esc(line)+'</p>':'')
+   +(getTok()?'<div class="acts"><button type="button" data-act="edit">수정</button><button type="button" data-act="del">삭제</button></div>':'')
+   +'</div></article>';}));
  return '<div id="lv2" class="lv2" hidden><div class="l2top"><button type="button" class="back" id="pback">← 테마</button><input type="search" id="pq" placeholder="제목·저자·요약·태그 검색" aria-label="검색"><button type="button" class="btn sm wbtn" id="wbtn">글쓰기</button></div>'
   +'<div class="tabbar" id="ptabs" role="tablist"><button type="button" class="tab on" data-theme="">전체</button>'+gs.map(g=>'<button type="button" class="tab" data-theme="'+esc(g.name)+'">'+esc(g.name)+'</button>').join('')+'</div>'
   +'<p class="pcount" id="pcount"></p><div class="items" id="plist">'+items.join('')+'</div><div class="none" id="pnone">검색 결과가 없어요.</div>'+(getTok()?trashLink():'')+'</div>';
@@ -512,6 +525,9 @@ root.onclick=e=>{
  if(e.target.closest('#e-save')){saveEdit();return;}
  if(e.target.closest('#e-cancel')){closeEdit();return;}
  if(e.target.closest('#e-img')){$('#e-file').click();return;}
+ const it=e.target.closest('#plist .item');
+ if(it && !e.target.closest('[data-act],button,a,input,textarea')){
+  pf.lastTheme=pf.theme;setHash('#id='+encodeURIComponent(it.dataset.id));return;}
  const h3=e.target.closest('.item h3');
  if(h3){pf.lastTheme=pf.theme;setHash('#id='+encodeURIComponent(h3.closest('.item').dataset.id));}
 };
